@@ -25,14 +25,17 @@ for (let i = 0; i < inputFields.length; i++) {
 /**
  * adding keydown function to buttons.
  */
-// let inputBox = document.getElementsByClassName("inputvalitation");
+let inputBox = document.getElementsByClassName("inputvalitation");
 
-// for (let i = 0; i < inputBox.length; i++) {
-//   const el = inputBox[i];
-//   el.addEventListener("keydown", (e) => {
-//     el.style.boxShadow = "none";
-//   });
-// }
+for (let i = 0; i < inputBox.length; i++) {
+  const el = inputBox[i];
+  el.addEventListener("keydown", (e) => {
+    el.style.boxShadow = "none";
+  });
+}
+
+
+
 
 /**
  * displaying form on click.
