@@ -20,7 +20,7 @@
         <ul class=" ">
           <li id="Login" class="a_tag_elm">Log-In</li>
 
-          <li><a href="#" id="Sign" class="a_tag_elm">Sign up</a></li>
+          <li><a href="#" id="formDisplay" class="a_tag_elm ">Sign up</a></li>
 
           <li class="nav-item custom-nav-item">
             <a href="" class="a_tag_elm">Contact</a>
@@ -76,22 +76,54 @@
     </div>
 
     <div class="signDiv" id="signBox">
-      <div class="signdiv2">
-        <p class="CloseLoginDivBttn" id="closeSigndiv">+</p>
-        <form action="" id="SignUpform">
-        <input type="text" id="username" name="" placeholder="Name" required />
-        <!-- <small>Error message</small> -->
-        <input type="email" id="email" placeholder="Email"  required />
-        <!-- <small>Error message</small> -->
-        <input type="text" id="course" placeholder="Course" required />
-        <input type="password" id="password" placeholder="Password"  required />
-        <input type="password" id="password2" placeholder="Confirm Password"  required /> <br>
-        <input type="submit" class="signBttn" id="buttonSingup" Sign-Up >
-        <!-- <button class="signBttn">Sign-Up</button> -->
-        </form>
-      </div>
+      <div id="signUpDiv">
+      <h1>SignUp</h1>
+      <p id="closeForm">+</p>
+      <form id="signUpForm">
+        <input
+          type="text"
+          placeholder="username"
+          id="name"
+          class="inputvalitation"
+          required
+          title="this Field can not be empty"
+        />
+        <input
+          type="text"
+          placeholder="course"
+          id="course"
+          class="inputvalitation"
+          required
+        />
+        <input
+          type="email"
+          placeholder="email"
+          id="email"
+          class="inputvalitation"
+          required
+        />
+        <input
+          type="password"
+          placeholder="password"
+          id="pass"
+          class="inputvalitation"
+          required
+        />
+        <input
+          type="password"
+          placeholder="confirm password"
+          id="ConPass"
+          class="inputvalitation"
+          required
+        />
+        <input type="submit" id="button" value="Create Account" />
+      </form>
+      <p class="switchText">Allready Have Account? <strong>Login</strong> </p>
+    </div>
     </div>
 
+
+    <script src="signup.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
