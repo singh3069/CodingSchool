@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="index.php">iSchool</a>
+        <span class="">Learn and Implement </span>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class=" ">
+          <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
+
+          <li class=""><a  onclick="document.location='home.html#allcourses'"class="a_tag_elm">Courses</a></li>
+
+          <!-- <li class=""><a href="" class="a_tag_elm">Payment</a></li> -->
+
+          <li class=""><a href="MyProfile.html" class="a_tag_elm">My Profile</a></li>
+
+          <!-- <li class=""><a href="" class="a_tag_elm">Logout</a></li>
+
+          <li class="">
+            <a href="" class="a_tag_elm">Feedback</a>
+          </li>
+
+          <li class="nav-item custom-nav-item">
+            <a href="" class="a_tag_elm">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="cart">
+        <a href="cart.html"><h2>Cart</h2><span>0</span></a>
+        
+      </div>
+    </nav>
+
+    <div class="product_container">
+        <div class="product_header">
+            <h5 class="product_title">COURSE</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+
+        <div class="products">
+
+        </div>
+
+    </div>
+
+    <!-- ----------------payment form hmtl-------- -->
+    <form class="paymentDiv">
+              <h3>Payment</h3>
+            <div class="nameDiv col">
+              <label for="cardname">Name on Card</label>
+              <input type="text" id="cardname" name="cardname"  maxlength="20" required>
+            </div>
+            <div class="cardNoDiv col">
+              <label for="cardnumber">Card number</label>
+              <input type="tel" id="cardnumber" name="cardnumber"  inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"   required>
+            </div>
+            <div class="expMonthDiv col">
+              <label for="expdate">Exp Date</label>
+              <input type="month" id="expdate" name="expdate"  pattern="[0-9]*" inputmode="numeric" required>
+            </div>
+            <!-- <div class="expYear col">
+                <label for="expyear">Exp Year</label>
+                <input type="number" id="expyear" name="expyear" placeholder="Exp Year" pattern="[0-9]*" inputmode="numeric" required>
+            </div> -->
+            <div class="col">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv"  pattern="[0-9]*" inputmode="numeric" maxlength="3" required>
+            </div>
+            
+            <strong class="CheckOutPayment">  </strong>
+
+            <div class="col">
+
+              <input class="confirmPaymentButton" type="button" value="Confirm Payment" type="submit">
+              <input class="cancelPaymentButton" type="button" value="Cancel Payment" type="button">
+              
+            </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #2f3e46;
+  height: 60px;
+  gap: 5px;
+  justify-content:space-around;
+  font-size: small;
+  position: fixed;
+  z-index: 2;
+
+}
+
+.fst_navDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fst_navDiv a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.fst_navDiv span {
+  font-size: 14px;
+  color: rgb(146, 146, 146);
+}
+
+.Snd_navDiv {
+    display: flex;
+    width: 80%;
+    /* justify-content: flex-end; */
+    align-items: center;
+    padding-right: 21px;
+    position: relative;
+}
+
+.logout_li{
+position: absolute;
+right: 58px;
+
+}
+
+.secdiv{
+  display: flex;
+   justify-content: flex-end; 
+  
+
+}
+
+.Snd_navDiv ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.a_tag_elm {
+  padding: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.a_tag_elm:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: honeydew;
+  cursor: pointer;
+}
+
+.video_nd_txt_div {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+}
+
+.video_div {
+  position: relative;
+}
+
+.Bg_video {
+  height: 100%;
+  width: 100%;
+}
+
+.blue_color_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #225470;
+  /* z-index: 1; */
+  opacity: 0.8;
+}
+
+.txt_div {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  color: #fff;
+  gap: 10px;
+  height: 120px;
+}
+
+.txt_div h1 {
+  font-size: 40px;
+}
+
+.txt_div small {
+  font-size: 20px;
+}
+
+.logindiv{
+  visibility: hidden;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    left: 510px;
+    /* padding-top: 65px; */
+    margin-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.login_heading {
+    font-size: 25px;
+    top: 12px;
+    position: absolute;
+    margin-bottom: 5px;
+    left: 180px;
+    color: white;
+    font-style: italic;
+}
+.para{
+  color: #fff;
+}
+
+#SwitchtoSignUp{
+  color: blue;
+  cursor: pointer;
+}
+
+.logindiv2 {
+  display: flex;
+  height: 155px;
+  padding-top: 65px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+form > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+}
+
+ #login-form-submit {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30px;
+  width: 60px;
+  background-color: rgb(26, 75, 167);
+  font-size: 14px;
+} 
+
+
+.CloseLoginDivBttn {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  font-size: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+}
+
+.signDiv {
+    visibility: hidden; 
+    height: 350px;
+    width: 327px;
+    position: absolute;
+    top: 140px;
+    left: 551px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: black;
+}
+.sign_heading{
+    font-size: 26px;
+    top: -55px;
+    position: absolute;
+    margin-bottom: 5px;
+    left: 115px;
+    color: white;
+    font-style: italic;
+}
+.para{
+  color: white;
+}
+
+
+.signdiv2 {
+    height: auto;
+    text-align: center;
+    position: relative;
+    margin-top: 61px;
+}
+
+.signBttn {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30px;
+  width: 85px;
+  background-color: rgb(26, 75, 167);
+  font-size: 14px;
+}
+#closeSigndiv{
+  position: absolute;
+  top: -55px;
+  right: 6px;
+  font-size: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+}
+
+.signdiv2 > input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+}
+
+
+.courses{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: burlywood;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.courses > h1{
+  position: absolute;
+  top: 0px;
+}
+
+.course1{
+  height: 340px;
+    width: 30%;
+    background-color: chartreuse;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    margin-top: 45px;
+    position: relative;
+    display: flex;
+    gap: 5px;
+
+}
+.courseImgDiv{
+  height: 250px;
+  /* background: aqua; */
+  width: 240%;
+  margin: 5px;
+}
+
+.courseImg{
+  height: 99%;
+  width: 99%;
+  border-radius: 8px;
+}
+
+.coursePriceDetailTimeDiv{
+
+}
+
+.coursePrice{
+margin-top: 30px;
+}
+
+.courseTime span{
+font-weight: 800;
+}
+
+.addtocartbtn{
+  position: absolute;
+  bottom: 35px;
+  right: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 45px;
+  width: 120px;
+  font-weight: 700;
+}
+
+
+
+
+/* -----------MYProfile page css---------------- */
+.container{
+  margin-top: 0px;
+  position: absolute;
+  top: 150px;
+  background: aquamarine;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content{
+  width: 250px;
+  background: aliceblue;
+  height: 60px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fas{
+font-size: 28px;
+}
+
+.feedBackDiv{
+width: 200px;
+}
+.feedBackDiv > h3 {
+margin-right: 40px;
+}
+
+.secondContainer{
+  display: flex;
+  justify-content: space-around;
+  /* margin: auto; */
+  align-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+
+.feedbackForm{
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: center;
+  right: 3%;
+  visibility: hidden;
+}
+
+.feedbackInput{
+margin-bottom: 10px;
+}
+
+.feedbackForm > textarea{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+text-align: left;
+}
+
+.feedBackSumbitButton{
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.feedBackSumbitButton:hover{
+  background-color: darkblue;
+}
+
+
+.updateDiv{
+    position: absolute;
+    bottom: 15%;
+    left: 9%;
+    /* margin-top: 10px; */
+    visibility: hidden;
+}
+
+#updateform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.updatebttn{
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.updatebttn:hover{
+  background-color: darkblue;
+}
+
+#updateform > input{
+  width: 250px;
+}
+
+
+/* -----------MYProfile page css end---------------- */
+
+
+.cart{
+/* background-color: crimson; */
+width: 100px;
+font-size: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+flex-direction: row;
+}
+
+.cart span {
+  font-size: 25px;
+  display: flex;
+}
+
+.cart a {
+color: white;
+text-decoration: none;
+margin-right: 5px;
+display: flex;
+}
+
+.cart h2{
+margin: 0 5px;
+/* margin-right: 5px; */
+}
+
+
+
+
+
+
+/* footer................ */
+
+footer {
+  height: 75px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+
+/* ----------------cart page----------------- */
+
+.product_container {
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  top: 100px;
+  background: blueviolet;
+  border: 3px solid black;
+}
+
+.product_header{
+width: 100%;
+max-width: 650px;
+display: flex;
+justify-content: flex-start;
+border-bottom: 4px solid lightgrey;
+margin: 0 auto;
+}
+
+.product_title{
+  width: 45%;
+  border-bottom: 1px solid lightgray;
+}
+
+.price{
+width: 15%;
+border-bottom: 1px solid lightgray;
+display: flex;
+align-items: center;
+}
+
+.quantity {
+width: 30%;
+border-bottom: 1px solid lightgrey;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.total {
+width: 10%;
+border-bottom: 1px solid lightgray;
+display: flex;
+align-items: center;
+}
+
+.product{
+  position: relative;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.product > h3 {
+text-decoration: underline;
+}
+
+.products{
+display: contents;
+}
+
+.basketTotalContainer{
+  display: block;
+  justify-content: flex-end;
+  position: relative;
+  width: 98%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle{
+  position: absolute;
+  right: 0;
+}
+
+.payment_button{
+  border: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  box-shadow: 0px 0px 2px 2px blue;
+  border-radius: 3px;
+}
+
+.basketTotal{
+width: 10%;
+}
+
+.cartImg{
+  height: 200px;
+  width: 220px;
+  border: 1px solid black;
+}
+
+.cancelbutton{
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+
+.paymentDiv{
+  display: flex;
+  top: 30%;
+  left: 27.9%;
+  position: fixed;
+  height: 305px;
+  width: 600px;
+  border: 2px solid black;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  visibility: hidden;
+  background-color: rgb(243, 240, 235);
+  border-radius: 10px;
+}
+
+.col{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}

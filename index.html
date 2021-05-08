@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>iSchool</title>
+  </head>
+  <body>
+    <!-- START NAVIGATION-->
+
+    <nav class="navbar">
+      <div class="fst_navDiv">
+        <a class="" href="index.php">iSchool</a>
+        <span class="">Learn and Implement </span>
+      </div>
+
+      <div class="Snd_navDiv">
+        <ul class=" ">
+          <li id="Login" class="a_tag_elm">Log-In</li>
+
+          <li><a href="#" id="Sign" class="a_tag_elm">Sign up</a></li>
+
+          <li class="nav-item custom-nav-item">
+            <a href="" class="a_tag_elm">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAVIGATION-->
+
+    <div class="video_nd_txt_div">
+      <div class="video_div">
+        <video class="Bg_video" loop>
+          <source src="./video.mp4" />
+        </video>
+      </div>
+
+      <div class="blue_color_div"></div>
+
+      <div class="txt_div">
+        <h1>Welcome to iSchool</h1>
+        <small>Learn and Implement</small>
+      </div>
+    </div>
+
+    <!-- end video bckground-->
+
+    <div class="logindiv" id="loginBox">
+      <div class="logindiv2">
+        <h1 class="login_heading">Log-in</h1>
+        <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
+
+        <form id="login-form">
+          <input
+            type="text"
+            name="username"
+            id="username-field"
+            class="login-form-field"
+            placeholder="Username"
+            required
+          /> <br>
+          <input
+            type="password"
+            name="password"
+            id="password-field"
+            class="login-form-field"
+            placeholder="Password"
+          /> <br>
+          <input type="submit" value="Login" id="login-form-submit" />
+          <P class="para">sign Up here <a id="SwitchtoSignUp">Sign-Up</a></P>
+        </form>
+      </div>
+    </div>
+
+    <div class="signDiv" id="signBox">
+      <div class="signdiv2">
+        <p class="CloseLoginDivBttn" id="closeSigndiv">+</p>
+        <form action="" id="SignUpform">
+        <input type="text" id="username" name="" placeholder="Name" required />
+        <!-- <small>Error message</small> -->
+        <input type="email" id="email" placeholder="Email"  required />
+        <!-- <small>Error message</small> -->
+        <input type="text" id="course" placeholder="Course" required />
+        <input type="password" id="password" placeholder="Password"  required />
+        <input type="password" id="password2" placeholder="Confirm Password"  required /> <br>
+        <input type="submit" class="signBttn" id="buttonSingup" Sign-Up >
+        <!-- <button class="signBttn">Sign-Up</button> -->
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

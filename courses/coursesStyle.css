@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+}
+/* ------------------------nava bar css start------------------------- */
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #2f3e46;
+  height: 60px;
+  gap: 5px;
+  justify-content: center;
+  font-size: small;
+  /* position: fixed; */
+  z-index: 2;
+  box-shadow: 0px 0px 20px 10px #2f3e46;
+}
+
+.fst_navDiv {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fst_navDiv a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.fst_navDiv span {
+  font-size: 14px;
+  color: rgb(146, 146, 146);
+}
+
+.Snd_navDiv {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Snd_navDiv ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.a_tag_elm {
+  padding: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.a_tag_elm:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgb(13, 16, 66);
+  cursor: pointer;
+}
+
+.cart{
+  /* background-color: crimson; */
+  width: 100px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: row;
+}
+
+.cart span {
+    font-size: 25px;
+    display: flex;
+    color: white;
+
+}
+
+.cart a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  display: flex;
+}
+
+.cart h2{
+  margin: 0 5px;
+/* margin-right: 5px; */
+}
+
+
+/* ------------------------nava bar css end------------------------- */
+
+
+.container{
+    background: chocolate;
+    margin-top: 2px;
+    width: 100%;
+    height: 91.8vh;
+    display: flex;
+    gap: 15px;
+}
+
+/* -----------styling of left side div (visitinglinks) and its content start----------------------------- */
+.visitinglinks{    
+    width: 26%;
+    height: 100%;
+    background: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.visitinglinks ol {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background: azure; */
+    
+}
+
+
+.visitinglinks ol li {
+    /* margin-bottom: 10px; */
+}
+
+/* -----------styling of left side div (visitinglinks) and its content end----------------------------- */
+
+
+
+
+
+
+/* -----------styling of right side div (maincontent) and its content start----------------------------- */
+
+.mainContent{
+    width: 76%;
+    height: 100%;
+    background: blanchedalmond;
+    overflow-y: hidden;
+    overflow-x: visible;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    gap: 40px;
+}
+
+.mainContent h1 {
+    margin: 0px auto;
+    text-decoration: underline;
+}
+
+.mainContent:hover{
+    overflow-y: scroll;
+    overflow-x: visible;
+}
+
+/* -----------styling of right side div (maincontent) and its content end----------------------------- */
+
+
+/* ----------------scroll bar styling -------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f3e46; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2f3e46; 
+}
+
+
+/* ----------------scroll bar styling end-------------------- */
