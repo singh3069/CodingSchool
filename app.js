@@ -12,24 +12,20 @@ const signDiv = document.getElementById("signBox");
 
 
 
-
-
-
 // showing feedback div and hidding it function start..................
 function showFeedbackForm () {
 	feedbackForm.style.visibility = "visible";
 	
 }
 
-
 if(feedBackDiv)feedBackDiv.addEventListener('click', showFeedbackForm);
 
-document.addEventListener('mouseup', function(e) {
-//   var container = document.getElementById('container');
-  if(!feedbackForm.contains(e.target)) {
-    feedbackForm.style.visibility = "hidden";
-  }
-});
+// document.addEventListener('mouseup', function(e) {
+// //   var container = document.getElementById('container');
+//   if(!feedbackForm.contains(e.target)) {
+//     feedbackForm.style.visibility = "hidden";
+//   }
+// });
 
 // showing feedback div and hidding it end..................
 
@@ -39,21 +35,20 @@ function showupdateForm () {
 	updateDiv.style.visibility = "visible";
 	
 }
-
-
 if(manageYourAccountDIv)manageYourAccountDIv.addEventListener('click', showupdateForm);
 
-document.addEventListener('mouseup', function(e) {
-//   var container = document.getElementById('container');
-  if (!updateDiv.contains(e.target)) {
-    updateDiv.style.visibility = "hidden";
-  }
-});
+
+
+// document.addEventListener('mouseup', function(e) {
+// //   var container = document.getElementById('container');
+//   if (!updateDiv.contains(e.target)) {
+//     updateDiv.style.visibility = "hidden";
+//   }
+// });
 // update your account function ends
 
 
 //  login box js......................
-
 function showLoginDiv() {
     // alert ("hello")
     signDiv.style.visibility = "hidden";
@@ -69,33 +64,3 @@ function hideLoginDiv() {
 
 if(login ) login.addEventListener('click', showLoginDiv);
 if(closeLoginDiv) closeLoginDiv.addEventListener('click' , hideLoginDiv);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

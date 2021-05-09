@@ -11,7 +11,6 @@ function removeItemFromCartHandler(event) {
   const Obj = {}
   const newObj = newData.map((i) => (Obj[i.tag] = i))
   setItemsInLocalStorage(Obj)
-
   displayItemsInCartLayout()
   showCartItemsCount()
 }
@@ -80,5 +79,23 @@ function cancelPayment() {
   document.querySelector(".paymentDiv").style.visibility = "hidden";
 }
 
-if (cancelPaymentButton)
-  cancelPaymentButton.addEventListener("click", cancelPayment);
+if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPayment);
+
+
+
+function addingEverythingToCoursesPurchased() {
+  let productContainer = document.querySelector(".products");
+  localStorage.clear();
+  displayItemsInCartLayout();
+  showCartItemsCount();
+  document.querySelector(".paymentDiv").style.visibility = "hidden";
+  productContainer.innerHTML = `<p> The purchased couses have moved to my course in my profile account </p>`;
+
+
+  console.log("hello");
+}
+
+if (confirmPaymentButton)confirmPaymentButton.addEventListener(
+    "click",
+    addingEverythingToCoursesPurchased
+  );
