@@ -4,28 +4,11 @@
  const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-
-
-// add to cart button and whole function to add to cart
-const addToCartButton = document.getElementsByClassName('addtocartbtn')
-
-
-
-
 let feedbackForm = document.querySelector(".feedbackForm");
 const feedBackDiv = document.querySelector(".feedBackDiv");
-
-
 let updateDiv = document.querySelector(".updateDiv");
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
-
-
-let matchingButton = document.getElementById('buttonSingup');
-
-
-const sign = document.getElementById("Sign")
 const signDiv = document.getElementById("signBox");
-const closeSignDiv = document.getElementById("closeSigndiv")
 
 
 
@@ -88,29 +71,8 @@ if(login ) login.addEventListener('click', showLoginDiv);
 if(closeLoginDiv) closeLoginDiv.addEventListener('click' , hideLoginDiv);
 
 
-// Sign box js...............
 
 
-
-// function showSignDiv() {
-//     signDiv.style.visibility = "visible";
-//     loginDiv.style.visibility = "hidden";
-// };
-
-// function hideSignDiv() {
-//     signDiv.style.visibility = "hidden";
-// };
-
-// if(sign) sign.addEventListener('click', showSignDiv);
-// if(closeSignDiv) closeSignDiv.addEventListener('click' , hideSignDiv);
-
-
-
-// if(loginButton) loginButton.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     const username = loginForm.username.value;
-//     const password = loginForm.password.value;
-// });
 
 
 

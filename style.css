@@ -19,10 +19,10 @@ body {
   width: 100%;
   display: flex;
   background-color: #2f3e46;
-  height: 60px;
+  height: 80px;
   gap: 5px;
   justify-content:space-around;
-  font-size: small;
+  font-size: 20px;
   position: fixed;
   z-index: 2;
   font-family: 'Josefin Sans', sans-serif;
@@ -100,22 +100,12 @@ right: 58px;
 }
 
 .video_div {
-    background: red;
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: relative;
 }
 
 .Bg_video {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .blue_color_div {
@@ -164,7 +154,7 @@ right: 58px;
 
 .platformdetails:hover{
 border: 2px solid black;
-
+cursor: pointer;
 }
 
 .logindiv{
@@ -314,8 +304,7 @@ form > input {
   outline: none;
 }
 
-h4 {
-  cursor: pointer;
+.basketTotalTitle {
   border: 2px solid black;
   display: inline;
   background: blue;

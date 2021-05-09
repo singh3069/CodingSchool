@@ -52,7 +52,7 @@ function displayItemsInCartLayout() {
               <h4 class="basketTotalTitle">
                   Basket Total &nbsp; $${cartCost}.00
               </h4>
-              <button class= "payment_button" onClick="checkOut()"  >Check Out</button>
+              <button class= "payment_button" onClick="checkOut()">Check Out</button>
           </div>
       `
     }
@@ -74,6 +74,7 @@ function checkOut() {
     Total &nbsp; $${cartCost}.00
     `;
 }
+
 
 function cancelPayment() {
   document.querySelector(".paymentDiv").style.visibility = "hidden";
