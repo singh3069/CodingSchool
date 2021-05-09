@@ -43,9 +43,22 @@
     </div>
 
     <!-- ----------------payment form hmtl-------- -->
-    <form class="paymentDiv">
+    <div class="paymentDiv">
+      <form class="paymentDivForm">
               <h3>Payment</h3>
-            <div class="nameDiv col">
+                <input type="text" placeholder="Name on card" required>
+                <input type="number" placeholder="Card Number" required>
+                <input type="month" placeholder="Expiry Month" required>
+                <input type="password" placeholder="cvv" required>
+                <button type="submit" class="confirmPaymentButton">Confirm Payment</button>
+                <button type="reset" class="cancelPaymentButton">Cancel Payment</button>
+                <input type="submit" value="Confirm Payment" class="confirmPaymentButton">
+                <input type="reset" value="Cancel Payment" class="cancelPaymentButton">
+      </form>
+            <strong class="CheckOutPayment">  </strong>
+    </div>
+    
+            <!-- <div class="nameDiv col">
               <label for="cardname">Name on Card</label>
               <input type="text" id="cardname" name="cardname"  maxlength="20" required>
             </div>
@@ -66,10 +79,10 @@
 
             <div class="col">
 
-              <input class="confirmPaymentButton" type="button" value="Confirm Payment" type="submit">
-              <input class="cancelPaymentButton" type="button" value="Cancel Payment" type="button">
-            </div>
-    </form>
+              <input type="submit" class="confirmPaymentButton"  value="Confirm Payment" >
+              <input  type="button" class="cancelPaymentButton" value="Cancel Payment">
+            </div> -->
+    
 
     <script src="./CartJavascript/script.js"></script>
     <script src="./CartJavascript/cart.js"></script>

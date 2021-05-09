@@ -51,9 +51,9 @@ function displayItemsInCartLayout() {
               <h4 class="basketTotalTitle">
                   Basket Total &nbsp; $${cartCost}.00
               </h4>
-              <button class= "payment_button" onClick="checkOut()">Check Out</button>
+              <button class= "payment_button"   onclick="document.location='payment.html'">Check Out</button>
           </div>
-      `
+      `;
     }
   }
 }
