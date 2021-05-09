@@ -51,27 +51,37 @@ function displayItemsInCartLayout() {
               <h4 class="basketTotalTitle">
                   Basket Total &nbsp; $${cartCost}.00
               </h4>
-              <button class= "payment_button"   onclick="document.location='payment.html'">Check Out</button>
+              <button class= "payment_button" onclick="checkOut()">Check Out</button>
           </div>
       `;
     }
   }
 }
-
 displayItemsInCartLayout()
 
 
 const confirmPaymentButton = document.querySelector(".confirmPaymentButton");
 const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
 
-function checkOut() {
-  const  cartCost = getitemsFromLocalStorage().totalCost
-  document.querySelector(".paymentDiv").style.visibility = "visible";
 
-  let CheckOutPayment = document.querySelector(".CheckOutPayment");
-  CheckOutPayment.innerHTML = `
-    Total &nbsp; $${cartCost}.00
-    `;
+// this function is applied when a onclick is added to check out button and a check out from is made in  cart page
+// function checkOut() {
+//   const  cartCost = getitemsFromLocalStorage().totalCost
+//   document.querySelector(".paymentDiv").style.visibility = "visible";
+
+  // let CheckOutPayment = document.querySelector(".CheckOutPayment");
+  // CheckOutPayment.innerHTML = `
+  //   Total &nbsp; $${cartCost}.00
+  //   `;
+// }
+
+
+function checkOut(){
+  console.log("hello1");
+  window.document.location = "payment.html";
+  const cartCost = getitemsFromLocalStorage().totalCost;
+  let checkOutPayment = document.getElementById("CheckOutPayment");
+  checkOutPayment.innerHTML = `Total &nbsp; $${cartCost}.00 `;
 }
 
 
@@ -84,18 +94,13 @@ if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPaym
 
 
 function addingEverythingToCoursesPurchased() {
-  let productContainer = document.querySelector(".products");
+  // let productContainer = document.querySelector(".products");
+  window.document.location = "cart.html";
+  console.log("hello");
   localStorage.clear();
   displayItemsInCartLayout();
   showCartItemsCount();
-  document.querySelector(".paymentDiv").style.visibility = "hidden";
-  productContainer.innerHTML = `<p> The purchased couses have moved to my course in my profile account </p>`;
-
-
-  console.log("hello");
+  document.getElementById("productsPurchaseMessage").innerHTML = `<p> The purchased couses have moved to my course in my profile account </p>`;
 }
 
-if (confirmPaymentButton)confirmPaymentButton.addEventListener(
-    "click",
-    addingEverythingToCoursesPurchased
-  );
+if (confirmPaymentButton)confirmPaymentButton.addEventListener("click",addingEverythingToCoursesPurchased);

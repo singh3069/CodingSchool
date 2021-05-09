@@ -9,6 +9,13 @@ const feedBackDiv = document.querySelector(".feedBackDiv");
 let updateDiv = document.querySelector(".updateDiv");
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
 const signDiv = document.getElementById("signBox");
+const coursesTag = document.getElementById("coursesTag");
+
+
+
+
+
+
 
 
 
@@ -63,4 +70,13 @@ function hideLoginDiv() {
 };
 
 if(login ) login.addEventListener('click', showLoginDiv);
-if(closeLoginDiv) closeLoginDiv.addEventListener('click' , hideLoginDiv);
+if(closeLoginDiv)closeLoginDiv.addEventListener('click' , hideLoginDiv);
+
+
+function getToCourses() {
+  console.log('hello')
+  let courseHeading = document.getElementById("courseHeading");
+  // window.location.href = "#courseHeading";
+  courseHeading.scrollIntoView();
+}
+if (coursesTag) coursesTag.addEventListener("click", getToCourses);
