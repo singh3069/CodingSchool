@@ -244,7 +244,9 @@ form > input {
     border-radius: 10px;
     background-color: black;
 }
-.sign_heading{
+
+
+/* .sign_heading{
     font-size: 26px;
     top: -55px;
     position: absolute;
@@ -255,7 +257,7 @@ form > input {
 }
 .para{
   color: white;
-}
+} */
 
 
 
@@ -316,7 +318,7 @@ form > input {
   top: 0;
   right: 0;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 800;
   width: fit-content;
   margin: 0px;
@@ -324,7 +326,7 @@ form > input {
   transform: rotate(45deg);
 }
 
-#button {
+#signUpButton {
   color: #fff;
   background-color: cornflowerblue;
   cursor: pointer;
@@ -336,7 +338,7 @@ form > input {
   border: 1px solid black;
 }
 
-#button:hover {
+#signUpButton:hover {
   background-color: darkblue;
 }
 
@@ -351,8 +353,81 @@ form > input {
 
 
 
+/*------------------------------ update form css------------------------------ */
+
+.updateDiv{
+    position: absolute;
+    bottom: 30%;
+    border: 1px solid black;
+    left: 42%;
+    height: 400px;
+    width: 350px;
+    /* margin-top: 10px; */
+    visibility: hidden;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 5px grey;
+}
+
+#updateform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.updatebttn{
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+.updatebttn:hover{
+  background-color: darkblue;
+}
+
+#updateform > input{
+  width: 250px;
+}
+
+.closeUpdateDivBttn{
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
 
 
+#updateFormbutton{
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#updateFormbutton:hover {
+  background-color: darkblue;
+}
+
+
+
+/*------------------------------ update form css end------------------------------ */
+
+#allcourses{
+  padding-top: 85px;
+  background-color: burlywood;
+}
 
 .courses{
   width: 100%;
@@ -361,17 +436,18 @@ form > input {
   flex-wrap: wrap;
   margin-top: 2px;
   margin-bottom: 2px;
-  background-color: burlywood;
   gap: 20px;
   justify-content: center;
   position: relative;
   /* z-index: -1; */
 }
 
-.courses > h1{
-  position: absolute;
-  top: 0px;
+.courseHeading{
+  text-align: center;
 }
+
+
+
 
 .course1{
     height: 340px;
@@ -394,6 +470,8 @@ form > input {
   box-sizing: border-box;
   border: 2px solid black;
 }
+
+
 
 
 .courseImgDiv{
@@ -512,36 +590,6 @@ text-align: left;
 }
 
 
-.updateDiv{
-    position: absolute;
-    bottom: 15%;
-    left: 9%;
-    /* margin-top: 10px; */
-    visibility: hidden;
-}
-
-#updateform{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.updatebttn{
-  color: #fff;
-  background-color: cornflowerblue;
-  cursor: pointer;
-}
-
-.updatebttn:hover{
-  background-color: darkblue;
-}
-
-#updateform > input{
-  width: 250px;
-}
-
 
 /* -----------MYProfile page css end---------------- */
 
@@ -588,6 +636,8 @@ footer {
   display: flex;
   justify-content: center;
   border: 2px solid black;
+  /* position: absolute;
+  bottom: 0px; */
 }
 
 

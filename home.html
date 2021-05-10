@@ -20,17 +20,15 @@
       <div class="Snd_navDiv">
         <ul class=" ">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
-          <!-- <li class=""><a  onclick="document.location='#allcourses'"class="a_tag_elm">Courses</a></li> -->
-          <li class=""><a id="coursesTag" class="a_tag_elm">Courses</a></li>
+          <li class=""><a  onclick="document.location='#allcourses'"class="a_tag_elm">Courses</a></li>
           <li class=""><a  href="index.html"class="a_tag_elm">Logout</a></li>
           <li class=""><a href="MyProfile.html" class="a_tag_elm">My Profile</a></li>
         </ul>
       </div>
 
       <div class="cart">
-      <a href="cart.html"><h2>Cart</h2><span>0</span></a>
+      <a href="cart.html"><h2>Cart</h2><span id="cartSpan">0</span></a>
       </div>
-
     </nav>
 
 
@@ -50,16 +48,16 @@
         <h1>Welcome to iSchool</h1>
         <small>Learn and Implement</small>
       </div>
-
     </div>
 
     <!-- end video bckground-->
 
-    <div id="allcourses" class="courses" >
-      
-      <h1 id="courseHeading">Select Your Prefferd Course</h1>
+    <div id="allcourses">
 
-      <div class="course1">
+      <h1 class="courseHeading">Select Your Prefferd Course</h1>
+
+      <div class="courses" >
+        <div class="course1">
         <div class="courseImgDiv">
           <img class="courseImg"  src="./Images/img1.jpeg" alt="this is image">
         </div>
@@ -173,7 +171,11 @@
       </div>
     </div>
 
-    <footer>
+      </div>
+
+      
+
+    <footer class="mainFooter">
       <small>Terms And conditon's are applied</small>
     </footer>
 

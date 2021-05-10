@@ -8,7 +8,7 @@ let signUpFrom = document.getElementById("signUpForm");
 let signUpDiv = document.getElementById("signUpDiv");
 let formDisplay = document.getElementById("formDisplay");
 let closeForm = document.getElementById("closeForm");
-let button = document.getElementById("button");
+let button = document.getElementById("signUpButton");
 
 /**
  * adding keyup function to buttons.

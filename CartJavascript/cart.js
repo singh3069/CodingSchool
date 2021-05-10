@@ -80,8 +80,9 @@ function checkOut(){
   console.log("hello1");
   window.document.location = "payment.html";
   const cartCost = getitemsFromLocalStorage().totalCost;
-  let checkOutPayment = document.getElementById("CheckOutPayment");
-  checkOutPayment.innerHTML = `Total &nbsp; $${cartCost}.00 `;
+  console.log(cartCost);
+  const finalPayment = document.getElementById('finalPayment');
+  finalPayment.textContent = `Total &nbsp; $${cartCost}.00 `;
 }
 
 
@@ -95,7 +96,7 @@ if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPaym
 
 function addingEverythingToCoursesPurchased() {
   // let productContainer = document.querySelector(".products");
-  window.document.location = "cart.html";
+  // window.document.location = "cart.html";
   console.log("hello");
   localStorage.clear();
   displayItemsInCartLayout();

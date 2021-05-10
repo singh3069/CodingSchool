@@ -38,13 +38,13 @@ let products = [
   {
     name: 'React.JS',
     tag: 'img7',
-    price: 4550,
+    price:4550,
     inCart: 0
   },
   {
     name: 'Angular',
     tag: 'img8',
-    price: 2000,
+    price:2000,
     inCart: 0
   }
 ]
@@ -108,7 +108,7 @@ function addProductInCart(product) {
  */
 function getTotalItemsInCart() {
   const allProductsArr = getitemsFromLocalStorage().itemsArray
-  console.log(allProductsArr)
+  // console.log(allProductsArr)
   const num = allProductsArr.reduce(
     (acc, item, index, arr) => acc + item.inCart,
     0
@@ -119,10 +119,16 @@ function getTotalItemsInCart() {
 /**
  * Show cart items count in UI
  */
+
+
 function showCartItemsCount() {
   const itemCount = getTotalItemsInCart()
-  console.log(itemCount)
-  document.querySelector('.cart span').textContent = itemCount
+  // console.log(itemCount)
+  let cartCount = document.getElementById("cartSpan");
+  if (cartCount) {
+    cartCount.textContent = itemCount;
+  }
+  
 }
 
 showCartItemsCount()
