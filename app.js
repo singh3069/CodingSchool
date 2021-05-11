@@ -1,10 +1,10 @@
  const login = document.getElementById("Login")
  const loginDiv = document.getElementById("loginBox");
  const closeLoginDiv = document.getElementById("closelogindiv")
- const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-let feedbackForm = document.querySelector(".feedbackForm");
+//  const loginForm = document.getElementById("login-form");
+// const loginButton = document.getElementById("login-form-submit");
+// const loginErrorMsg = document.getElementById("login-error-msg");
+let feedbackForm = document.querySelector("#feedbackForm");
 const feedBackDiv = document.querySelector(".feedBackDiv");
 let updateDiv = document.querySelector(".updateDiv");
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
@@ -18,39 +18,53 @@ const signDiv = document.getElementById("signBox");
 
 
 
-// showing feedback div and hidding it function start..................
+/**
+ * showing feedback div ..................
+ */
 function showFeedbackForm () {
 	feedbackForm.style.visibility = "visible";
+    updateDiv.style.visibility = "hidden";
 }
 
 if(feedBackDiv)feedBackDiv.addEventListener('click', showFeedbackForm);
 
-// document.addEventListener('mouseup', function(e) {
-// //   var container = document.getElementById('container');
-//   if(!feedbackForm.contains(e.target)) {
-//     feedbackForm.style.visibility = "hidden";
-//   }
-// });
-
-// showing feedback div and hidding it end..................
 
 
-// showing update your account box 
+const closeFeedbackFormBttn = document.getElementById("closeFeedbackForm");
+/**
+ *  hide feedback form
+ */
+function hideFeedbackForm() {
+  feedbackForm.style.visibility = "hidden";
+}
+if (closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFeedbackForm);
+
+
+
+
+/** 
+* showing update your profile from
+*/
 function showupdateForm () {
 	updateDiv.style.visibility = "visible";
+    feedbackForm.style.visibility = "hidden";
 	
 }
 if(manageYourAccountDIv)manageYourAccountDIv.addEventListener('click', showupdateForm);
 
 
+/** 
+* hidding update your profile from
+*/
 
-// document.addEventListener('mouseup', function(e) {
-// //   var container = document.getElementById('container');
-//   if (!updateDiv.contains(e.target)) {
-//     updateDiv.style.visibility = "hidden";
-//   }
-// });
-// update your account function ends
+const closeUpdateDivBttn = document.getElementById("closeUpdateDivBttn");
+
+function hideUpdateForm(){
+    updateDiv.style.visibility = "hidden";
+}
+if (closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateForm);
+
+
 
 
 //  login box js......................

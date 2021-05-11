@@ -14,24 +14,22 @@
 <body>
 
 <nav class="navbar">
-
       <div class="fst_navDiv">
         <a class="" href="index.php">iSchool</a>
         <span class="">Learn and Implement </span>
       </div>
-
       <div class="Snd_navDiv">
         <ul class=" ">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
           <li class=""><a  onclick="document.location='home.html#allcourses'"class="a_tag_elm">Courses</a></li>
         </ul>
       </div>
-    </nav>
+</nav>
 
 
 
     <div class="container">
-      <h1>Welcome <p> </p></h1>
+      <h1>Welcome <p> saurabh</p></h1>
       <div class="secondContainer">
         <div class="manageYourAccountDIv content ">
         <i class="fas fa-user"></i>
@@ -51,16 +49,20 @@
       </div>
     </div>
 
-    <form action="" class="feedbackForm animate__animated animate__bounceInUp">
+    <div id="feedbackForm">
+      <h2>Submit Your Feedback Here !</h2>
+      <p id="closeFeedbackForm">+</p>
+    <form action="" id="feedForm">
       <input type="text" placeholder="Enter Your username" class="feedbackInput" >
       <textarea rows="4" cols="50" name="comment" placeholder="Enter Your text here..." ></textarea>
       <input type="reset" value="Reset" class="feedBackResetButton">
       <input type="submit" value="Submit" class="feedBackSumbitButton">
     </form>
+    </div>
 
-
-      <div class="updateDiv  " id="updateBox">
-        <p class="closeUpdateDivBttn">+</p>
+      <div class="updateDiv" id="updateBox">
+        <h2>Update Your Profile Here !</h2>
+        <p id="closeUpdateDivBttn">+</p>
         <form action="" id="updateform">
         <input type="text" id="username" name="" placeholder="Name" required />
         <input type="email" id="email" placeholder="Email"  required />
@@ -71,6 +73,19 @@
         <button type="submit" class="updatebttn" id="updateFormbutton" >Update</button>
         </form>
     </div>
+
+
+
+    <footer class=" mainFooter profileFooter">
+      <h4>A community that Helps You in learn and Grow.</h4>
+      <small>Terms And conditon's are applied</small>
+      <ul>
+        <h6>Contact Us </h6>
+        <li class="footerLi" ><i class="fab fa-facebook-square"></i></li>
+        <li class="footerLi" ><i class="fab fa-twitter"></i></li>
+        <li class="footerLi" ><i class="far fa-envelope"></i></li>
+      </ul>
+    </footer>
 
   <script src="app.js"></script>
 </body>

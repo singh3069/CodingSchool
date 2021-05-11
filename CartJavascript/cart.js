@@ -60,8 +60,7 @@ function displayItemsInCartLayout() {
 displayItemsInCartLayout()
 
 
-const confirmPaymentButton = document.querySelector(".confirmPaymentButton");
-const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
+// const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
 
 
 // this function is applied when a onclick is added to check out button and a check out from is made in  cart page
@@ -78,30 +77,37 @@ const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
 
 function checkOut(){
   console.log("hello1");
-  window.document.location = "payment.html";
   const cartCost = getitemsFromLocalStorage().totalCost;
   console.log(cartCost);
-  const finalPayment = document.getElementById('finalPayment');
-  finalPayment.textContent = `Total &nbsp; $${cartCost}.00 `;
+  const finalPayment = document.getElementsByClassName("finalPayment");
+  if (finalPayment) {
+  finalPayment.innerHTML = `
+    Total &nbsp; $${cartCost}.00
+    `;
+  }
+  window.document.location = "payment.html";
+
 }
 
 
-function cancelPayment() {
-  document.querySelector(".paymentDiv").style.visibility = "hidden";
-}
+// function cancelPayment() {
+//   document.querySelector(".paymentDiv").style.visibility = "hidden";
+// }
 
-if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPayment);
+// if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPayment);
 
 
+const confirmPaymentButton = document.querySelector(".confirmPaymentButton");
 
 function addingEverythingToCoursesPurchased() {
   // let productContainer = document.querySelector(".products");
-  // window.document.location = "cart.html";
   console.log("hello");
   localStorage.clear();
   displayItemsInCartLayout();
   showCartItemsCount();
   document.getElementById("productsPurchaseMessage").innerHTML = `<p> The purchased couses have moved to my course in my profile account </p>`;
+  window.document.location = "cart.html";
+
 }
 
 if (confirmPaymentButton)confirmPaymentButton.addEventListener("click",addingEverythingToCoursesPurchased);

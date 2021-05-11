@@ -18,7 +18,7 @@ body {
 .navbar {
   width: 100%;
   display: flex;
-  background-color: #2f3e46;
+  background-color: #264653;
   height: 80px;
   gap: 5px;
   justify-content:space-around;
@@ -50,7 +50,7 @@ body {
 
 .fst_navDiv span {
   font-size: 14px;
-  color: rgb(146, 146, 146);
+  color:whitesmoke;
 }
 
 .Snd_navDiv {
@@ -89,7 +89,7 @@ right: 58px;
 .a_tag_elm:hover {
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: #264653;
+  background-color: #0e3347;
   cursor: pointer;
 }
 
@@ -246,19 +246,6 @@ form > input {
 }
 
 
-/* .sign_heading{
-    font-size: 26px;
-    top: -55px;
-    position: absolute;
-    margin-bottom: 5px;
-    left: 115px;
-    color: white;
-    font-style: italic;
-}
-.para{
-  color: white;
-} */
-
 
 
 
@@ -359,14 +346,15 @@ form > input {
     position: absolute;
     bottom: 30%;
     border: 1px solid black;
-    left: 42%;
+    border-radius: 10px;
+    left: 38%;
     height: 400px;
     width: 350px;
-    /* margin-top: 10px; */
     visibility: hidden;
-    background: whitesmoke;
+    background: white;
     display: flex;
-    flex-direction: row;
+    text-align: center;
+    flex-direction: column;
     justify-content: center;
     box-shadow: 0px 0px 6px 5px grey;
 }
@@ -377,7 +365,7 @@ form > input {
     align-content: center;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .updatebttn{
@@ -394,7 +382,8 @@ form > input {
   width: 250px;
 }
 
-.closeUpdateDivBttn{
+
+#closeUpdateDivBttn{
     position: absolute;
     top: -4px;
     right: 0px;
@@ -424,9 +413,93 @@ form > input {
 
 /*------------------------------ update form css end------------------------------ */
 
+
+/* feedback form css */
+
+#feedbackForm{
+    height: 400px;
+    position: absolute;
+    top: 18%;
+    left: 38%;
+    background: white;
+    width: 350px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 6px 5px grey;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#closeFeedbackForm{
+  position: absolute;
+    top: -4px;
+    right: 0px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#feedForm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.feedbackInput{
+margin-bottom: 10px;
+width: 300px;
+}
+
+#feedForm > textarea{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+text-align: left;
+width: 300px;
+}
+
+.feedBackSumbitButton{
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.feedBackResetButton{
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.feedBackResetButton:hover{
+  color: #fff; 
+   background-color: cornflowerblue;
+}
+
+.feedBackSumbitButton:hover{
+    background-color: darkblue;
+}
+
+/* feedback from css ends */
+
 #allcourses{
   padding-top: 85px;
-  background-color: burlywood;
+  /* background-color: burlywood; */
 }
 
 .courses{
@@ -435,33 +508,38 @@ form > input {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2px;
-  margin-bottom: 2px;
   gap: 20px;
   justify-content: center;
-  position: relative;
-  /* z-index: -1; */
+  padding-bottom: 30px;
+  min-height: calc(100vh - 213px);
 }
 
 .courseHeading{
   text-align: center;
+  text-decoration: underline;
 }
 
 
-
+.courseName{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+}
 
 .course1{
     height: 340px;
     width: 30%;
-    background-color: chartreuse;
+    background-color: #1f586e;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 2em 1em 4em / 0.5em 3em;
     margin-top: 45px;
     position: relative;
     display: flex;
-    gap: 5px;
+    gap: 7px;
     transform: scale(1);
     transition: transform.5s, opacity.5s;
+    color: whitesmoke;
 }
 
 .course1:hover{
@@ -469,9 +547,8 @@ form > input {
   opacity: 0.9;
   box-sizing: border-box;
   border: 2px solid black;
+  color: antiquewhite;
 }
-
-
 
 
 .courseImgDiv{
@@ -506,6 +583,11 @@ font-weight: 800;
   font-weight: 700;
 }
 
+.addtocartbtn:hover{
+ background-color: #1f586e;
+ color: whitesmoke;
+}
+
 
 
 
@@ -514,13 +596,18 @@ font-weight: 800;
   margin-top: 0px;
   position: absolute;
   top: 150px;
-  background: aquamarine;
+  background-color: #264653;
   width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
 }
 
+.container h1{
+  color: whitesmoke;
+  display: flex;
+  gap: 50px;
+}
 
 .content{
   width: 250px;
@@ -556,38 +643,7 @@ margin-right: 40px;
 }
 
 
-.feedbackForm{
-  position: absolute;
-  bottom: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-evenly;
-  align-content: center;
-  right: 3%;
-  visibility: hidden;
-}
 
-.feedbackInput{
-margin-bottom: 10px;
-}
-
-.feedbackForm > textarea{
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-text-align: left;
-}
-
-.feedBackSumbitButton{
-  color: #fff;
-  background-color: cornflowerblue;
-  cursor: pointer;
-}
-
-.feedBackSumbitButton:hover{
-  background-color: darkblue;
-}
 
 
 
@@ -629,22 +685,67 @@ margin: 0 5px;
 
 /* footer................ */
 
-footer {
-  height: 75px;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
-  /* position: absolute;
-  bottom: 0px; */
+
+.mainFooter{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    color: antiquewhite;
+    background-color: #2f3e46;
+    flex-direction: column;
+    gap: 40px;
+    height: 133px;
 }
+
+.mainFooter ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.mainFooter ul h6{
+    display: flex;
+    align-items: center;
+}
+
+.footerLi i{
+  font-size: 25px;
+}
+
+
+.footerLi i:hover{
+  cursor: pointer;
+}
+
+
+
+
+.profileFooter{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* .cartFooter{
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+} */
+
+
 
 
 /* ----------------cart page----------------- */
 
+
+
 .product_container {
-  max-width: 650px;
+  max-width: 710px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -654,13 +755,15 @@ footer {
   position: relative;
   height: 100%;
   top: 100px;
-  background: blueviolet;
+  background-color: #264653;
+  color: whitesmoke;
   border: 3px solid black;
+  margin-bottom: 105px;
 }
 
 .product_header{
 width: 100%;
-max-width: 650px;
+max-width: 710px;
 display: flex;
 justify-content: flex-start;
 border-bottom: 4px solid lightgrey;

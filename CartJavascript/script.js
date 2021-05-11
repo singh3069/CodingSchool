@@ -2,52 +2,53 @@ let products = [
   {
     name: 'HTML and CSS',
     tag: 'img1',
-    price: 450,
+    price: 1000,
     inCart: 0
   },
   {
     name: 'JavaScript',
     tag: 'img2',
-    price: 550,
+    price: 2000,
     inCart: 0
   },
   {
     name: 'C++',
     tag: 'img3',
-    price: 600,
+    price: 2000,
     inCart: 0
   },
   {
     name: 'Python',
     tag: 'img4',
-    price: 800,
+    price: 4000,
     inCart: 0
   },
   {
-    name: '#C',
+    name: 'C#',
     tag: 'img5',
-    price: 1000,
+    price: 2000,
     inCart: 0
   },
   {
     name: 'Bootstrap',
     tag: 'img6',
-    price: 550,
+    price: 700,
     inCart: 0
   },
   {
     name: 'React.JS',
     tag: 'img7',
-    price:4550,
+    price:4999,
     inCart: 0
   },
   {
     name: 'Angular',
     tag: 'img8',
-    price:2000,
+    price:3999,
     inCart: 0
   }
 ]
+
 
 /**
  * Get items in localStorage
