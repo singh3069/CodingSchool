@@ -1,98 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/> -->
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>My Profile</title>
-</head>
-<body>
-
-<nav class="navbar">
+  </head>
+  <body>
+    <nav class="navbar">
       <div class="fst_navDiv">
         <a class="" href="home.html">iSchool</a>
         <span class="">Learn and Implement </span>
       </div>
       <div class="Snd_navDiv">
-        <ul class=" ">
+        <ul class="">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
-          <li class=""><a  onclick="document.location='home.html#allcourses'"class="a_tag_elm">Courses</a></li>
-          <li class=""><a  href="index.html"class="a_tag_elm">Logout</a></li>
+          <li class="">
+            <a
+              onclick="document.location='home.html#allcourses'"
+              class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
         </ul>
       </div>
       <div class="cart">
-      <a href="cart.html"><h2>Cart</h2><span id="cartSpan">0</span></a>
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
       </div>
-</nav>
-
-
+    </nav>
 
     <div class="container">
-      <h1>Welcome <p> saurabh</p></h1>
+      <h1>
+        Welcome
+        <p>saurabh</p>
+      </h1>
       <div class="secondContainer">
-        <div class="manageYourAccountDIv content ">
-        <i class="fas fa-user"></i>
-        <h3>Update Your Profile</h3>
-      </div>
+        <div class="manageYourAccountDIv content">
+          <i class="fas fa-user"></i>
+          <h3>Update Your Profile</h3>
+        </div>
 
-      <div class="coursesPurchasedDiv content" >
-        <i class="fas fa-book"></i>
-        <h3>Courses Purchased</h3>
-      </div>
+        <div class="coursesPurchasedDiv content">
+          <i class="fas fa-book"></i>
+          <h3>Courses Purchased</h3>
+        </div>
 
-      <div class="feedBackDiv content ">   
-        <i class="fas fa-comment"></i>
-        <h3>Feedback</h3>
+        <div class="feedBackDiv content">
+          <i class="fas fa-comment"></i>
+          <h3>Feedback</h3>
+        </div>
       </div>
-      </div>
-
-
     </div>
 
     <div id="feedbackForm">
       <h2>Submit Your Feedback Here !</h2>
       <p id="closeFeedbackForm">+</p>
-    <form action="" id="feedForm">
-      <input type="text" placeholder="Enter Your username" class="feedbackInput" >
-      <textarea rows="4" cols="50" name="comment" placeholder="Enter Your text here..." ></textarea>
-      <input type="reset" value="Reset" class="feedBackResetButton">
-      <input type="submit" value="Submit" class="feedBackSumbitButton">
-    </form>
+      <form action="" id="feedForm">
+        <input
+          type="text"
+          placeholder="Enter Your username"
+          class="feedbackInput"
+        />
+        <textarea
+          rows="4"
+          cols="50"
+          name="comment"
+          placeholder="Enter Your text here..."
+        ></textarea>
+        <input type="reset" value="Reset" class="feedBackResetButton" />
+        <input type="submit" value="Submit" class="feedBackSumbitButton" />
+      </form>
     </div>
 
-
-      <div class="updateDiv" id="updateBox">
-        <h2>Update Your Profile Here !</h2>
-        <p id="closeUpdateDivBttn">+</p>
-        <form action="" id="updateform">
+    <div class="updateDiv" id="updateBox">
+      <h2>Update Your Profile Here !</h2>
+      <p id="closeUpdateDivBttn">+</p>
+      <form action="" id="updateform">
         <input type="text" id="username" name="" placeholder="Name" required />
-        <input type="email" id="email" placeholder="Email"  required />
+        <input type="email" id="email" placeholder="Email" required />
         <input type="text" id="course" placeholder="Course" required />
-        <input type="password" id="updatePassword" placeholder="Password"   required />
-        <input type="password" id="updateConfirmPassword" placeholder="Confirm Password"  required /> <br>
-        <!-- <input type="submit" class="updatebttn " id="matchingbttn" value="Update" > -->
-        <button type="submit" class="updatebttn" id="updateFormbutton" >Update</button>
-        </form>
+        <input
+          type="password"
+          id="updatePassword"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          id="updateConfirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <br />
+        <button type="submit" class="updatebttn" id="updateFormbutton">
+          Update
+        </button>
+      </form>
     </div>
 
-
-
-    <footer class=" mainFooter profileFooter">
+    <footer class="mainFooter profileFooter">
       <h4>A community that Helps You in learn and Grow.</h4>
       <small>Terms And conditon's are applied</small>
       <ul>
-        <h6>Contact Us </h6>
-        <li class="footerLi" ><i class="fab fa-facebook-square"></i></li>
-        <li class="footerLi" ><i class="fab fa-twitter"></i></li>
-        <li class="footerLi" ><i class="far fa-envelope"></i></li>
+        <h6>Contact Us</h6>
+        <li class="footerLi"><i class="fab fa-facebook-square"></i></li>
+        <li class="footerLi"><i class="fab fa-twitter"></i></li>
+        <li class="footerLi"><i class="far fa-envelope"></i></li>
       </ul>
     </footer>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -1,20 +1,5 @@
-const login = document.getElementById("Login")
-const loginDiv = document.getElementById("loginBox");
-const closeLoginDiv = document.getElementById("closelogindiv")
-let feedbackForm = document.querySelector("#feedbackForm");
 const feedBackDiv = document.querySelector(".feedBackDiv");
 let updateDiv = document.querySelector(".updateDiv");
-const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
-
-
-
-
-
-
-
-
-
-
 /**
  * showing feedback div ..................
  */
@@ -22,11 +7,10 @@ function showFeedbackForm () {
 	feedbackForm.style.visibility = "visible";
     updateDiv.style.visibility = "hidden";
 }
-
 if(feedBackDiv)feedBackDiv.addEventListener('click', showFeedbackForm);
 
 
-
+let feedbackForm = document.querySelector("#feedbackForm");
 const closeFeedbackFormBttn = document.getElementById("closeFeedbackForm");
 /**
  *  hide feedback form
@@ -38,6 +22,7 @@ if(closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFee
 
 
 
+const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
 
 /** 
 * showing update your profile from
@@ -62,20 +47,28 @@ function hideUpdateForm(){
 if(closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateForm);
 
 
-
-
+const loginDiv = document.getElementById("loginBox");
+const login = document.getElementById("Login");
 //  login box js......................
 function showLoginDiv() {
     // alert ("hello")
     signUpDiv.style.visibility = "hidden";
     loginDiv.style.visibility = "visible";
 }
+if(login) login.addEventListener("click", showLoginDiv);
+
+
+
+const closeLoginDiv = document.getElementById("closelogindiv");
+/**
+ * Function to hide login div
+ */
 
 function hideLoginDiv() {
     loginDiv.style.visibility = "hidden";
 };
 
-if(login)login.addEventListener('click', showLoginDiv);
+
 if(closeLoginDiv)closeLoginDiv.addEventListener('click' , hideLoginDiv);
 
 

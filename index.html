@@ -13,13 +13,13 @@
     <nav class="navbar">
       <div class="fst_navDiv">
         <a>iSchool</a>
-        <span >Learn and Implement </span>
+        <span>Learn and Implement </span>
       </div>
 
       <div class="Snd_navDiv indexSecondNav">
-        <ul class=" ">
+        <ul class="">
           <li id="Login" class="a_tag_elm">Log-In</li>
-          <li><a href="#" id="formDisplay" class="a_tag_elm ">Sign up</a></li>
+          <li><a href="#" id="formDisplay" class="a_tag_elm">Sign up</a></li>
         </ul>
       </div>
     </nav>
@@ -28,7 +28,7 @@
 
     <div class="video_nd_txt_div">
       <div class="video_div">
-        <video class="Bg_video" loop>
+        <video class="Bg_video" loop autoplay>
           <source src="./video.mp4" />
         </video>
       </div>
@@ -39,15 +39,16 @@
       </div>
 
       <div class="platformdetails">
-        <P>The couses of our websites provide you the best in class teachers and best in class environment ! </P>
+        <p>
+          The couses of our websites provide you the best in class teachers and
+          best in class environment !
+        </p>
       </div>
-      
     </div>
 
     <!-- end video bckground-->
 
     <div class="logindiv" id="loginBox">
-
       <h1 class="login_heading">Log-in</h1>
       <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
 
@@ -60,66 +61,71 @@
             class="login-form-field"
             placeholder="Username"
             required
-          /> <br>
+          />
+          <br />
           <input
             type="password"
             name="password"
             id="password-field"
             class="login-form-field"
             placeholder="Password"
-          /> <br>
+          />
+          <br />
           <input type="submit" value="Login" id="login-form-submit" />
         </form>
       </div>
-      <P class="para">Don't have Account ?<a id="SwitchtoSignUp"> Sign-Up</a> Here.</P>
+      <p class="para">
+        Don't have Account ?<a id="SwitchtoSignUp"> Sign-Up</a> Here.
+      </p>
     </div>
 
     <div class="signDiv" id="signBox">
       <div id="signUpDiv">
-      <h1>SignUp</h1>
-      <p id="closeForm">+</p>
-      <form id="signUpForm">
-        <input
-          type="text"
-          placeholder="username"
-          id="name"
-          class="inputvalitation"
-          required
-        />
-        <input
-          type="text"
-          placeholder="course"
-          id="course"
-          class="inputvalitation"
-          required
-        />
-        <input
-          type="email"
-          placeholder="email"
-          id="email"
-          class="inputvalitation"
-          required
-        />
-        <input
-          type="password"
-          placeholder="password"
-          id="pass"
-          class="inputvalitation"
-          required
-        />
-        <input
-          type="password"
-          placeholder="confirm password"
-          id="ConPass"
-          class="inputvalitation"
-          required
-        />
-        <input type="submit" id="signUpButton" value="Create Account" />
-      </form>
-      <p class="switchText">Allready Have Account? <strong id="switchToLogin">Login</strong> </p>
+        <h1>SignUp</h1>
+        <p id="closeForm">+</p>
+        <form id="signUpForm">
+          <input
+            type="text"
+            placeholder="username"
+            id="name"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="text"
+            placeholder="course"
+            id="course"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="email"
+            placeholder="email"
+            id="email"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="password"
+            placeholder="password"
+            id="pass"
+            class="inputvalitation"
+            required
+          />
+          <input
+            type="password"
+            placeholder="confirm password"
+            id="ConPass"
+            class="inputvalitation"
+            required
+          />
+          <input type="submit" id="signUpButton" value="Create Account" />
+        </form>
+        <p class="switchText">
+          Allready Have Account? <strong id="switchToLogin">Login</strong>
+        </p>
+      </div>
     </div>
-    </div>
-
 
     <script src="signup.js"></script>
     <script src="app.js"></script>

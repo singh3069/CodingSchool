@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, , initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <title>iSchool</title>
-
   </head>
   <body>
-
     <!-- START NAVIGATION-->
     <nav class="navbar">
       <div class="fst_navDiv">
@@ -20,27 +21,33 @@
       </div>
 
       <div class="Snd_navDiv">
-        <ul class=" ">
+        <ul class="">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
-          <li class=""><a  onclick="document.location='#allcourses'"class="a_tag_elm">Courses</a></li>
-          <li class=""><a href="MyProfile.html" class="a_tag_elm">My Profile</a></li>
-          <li class=""><a  href="index.html"class="a_tag_elm">Logout</a></li>
+          <li class="">
+            <a onclick="document.location='#allcourses'" class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="MyProfile.html" class="a_tag_elm">My Profile</a>
+          </li>
+          <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
         </ul>
       </div>
 
       <div class="cart">
-      <a href="cart.html"><h2>Cart</h2><span id="cartSpan">0</span></a>
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
       </div>
     </nav>
-
-    
     <!-- END NAVIGATION-->
-
 
     <!-- video and text div -->
     <div class="video_nd_txt_div">
       <div class="video_div">
-        <video class="Bg_video"  loop>
+        <video class="Bg_video" loop autoplay>
           <source src="./video.mp4" />
         </video>
       </div>
@@ -52,134 +59,192 @@
         <small>Learn and Implement</small>
       </div>
     </div>
-
     <!-- end video div-->
 
-
-    <!-- Courses div -->
+    <!-- Courses info div -->
     <div id="allcourses">
-
       <h1 class="courseHeading">Select Your Prefferd Course</h1>
 
-      <div class="courses" >
-
+      <div class="courses">
+        <!-- ----------------------------Html and CSS-------------------------------- -->
         <div class="course1">
-        <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img1.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">HTML and CSS</h2>
-          <p class="courseDetails" >Lean the Foundations of HTML & CSS to Create Fully Customized, Mobile Responsive Web Pages.</p>
-        <p class="coursePrice">1000 Rupees</p>
-        <p class="courseTime">Total time <span>20 Hrs</span></p>
-        </div>
-      <button data-tag="img1" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-      <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img2.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">JavaScript</h2>
-          <p class="courseDetails" >An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.</p>
-        <p class="coursePrice">2000 Rupees</p>
-        <p class="courseTime">Total time <span>30 Hrs</span></p>
-        </div>
-      <button data-tag="img2" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-      <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img3.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">C++</h2>
-          <p class="courseDetails" >Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills needed for game, system, and application development.</p>
-        <p class="coursePrice">2000 Rupees</p>
-        <p class="courseTime">Total time <span>30 Hrs</span></p>
-        </div>
-      <button data-tag="img3" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-      <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img4.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">Python</h2>
-          <p class="courseDetails">Learn real-life Python skills by creating Python database apps, Python web apps, Python scrapers, & many more.</p>
-        <p class="coursePrice">4000 Rupees</p>
-        <p class="courseTime">Total time <span>40 Hrs</span></p>
-        </div>
-      <button data-tag="img4" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-      <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img5.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">C#</h2>
-          <p class="courseDetails" >An in-depth, step-by-step guide to classes, interfaces and object-oriented programming (OOP) with C#.</p>
-        <p class="coursePrice">2000 Rupees</p>
-        <p class="courseTime">Total time <span>30 Hrs</span></p>
-        </div>
-      <button data-tag="img5" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-      <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img6.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">Bootstrap 4</h2>
-          <p class="courseDetails" >Master Bootstrap 4 and build  real world themes while learning HTML5 semantics & CSS3.</p>
-        <p class="coursePrice">700 Rupees</p>
-        <p class="courseTime">Total time <span>10 Hrs</span></p>
-        </div>
-      <button data-tag="img6" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
-        <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img7.jpeg" alt="this is image">
-        </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">React.JS</h2>
-          <p class="courseDetails" >Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more.</p>
-        <p class="coursePrice">4999 Rupees</p>
-        <p class="courseTime">Total time <span>40 Hrs</span></p>
-        </div>
-      <button  data-tag="img7" class="addtocartbtn">Add to Cart</button>
-      </div>
-
-      <div class="course1">
           <div class="courseImgDiv">
-          <img class="courseImg"  src="./Images/img8.jpeg" alt="this is image">
+            <img
+              class="courseImg"
+              src="./Images/img1.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">HTML and CSS</h2>
+            <p class="courseDetails">
+              Lean the Foundations of HTML & CSS to Create Fully Customized,
+              Mobile Responsive Web Pages.
+            </p>
+            <p class="coursePrice">1000 Rupees</p>
+            <p class="courseTime">Total time <span>20 Hrs</span></p>
+          </div>
+          <button data-tag="img1" class="addtocartbtn">Add to Cart</button>
         </div>
-        <div class="coursePriceDetailTimeDiv" >
-        <h2 class="courseName">Angular</h2>
-          <p class="courseDetails" >Master Angular and build awesome, reactive web apps with the successor of Angular.js</p>
-        <p class="coursePrice">3999 Rupees</p>
-        <p class="courseTime">Total time <span>40 Hrs</span></p>
+
+        <!-- ----------------------------JavaScript-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img2.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">JavaScript</h2>
+            <p class="courseDetails">
+              An advanced JavaScript course for everyone! Scope, closures,
+              prototypes, 'this', build your own framework, and more.
+            </p>
+            <p class="coursePrice">2000 Rupees</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img2" class="addtocartbtn">Add to Cart</button>
         </div>
-      <button data-tag="img8" class="addtocartbtn">Add to Cart</button>
+
+        <!-- ------------------------------C++-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img3.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">C++</h2>
+            <p class="courseDetails">
+              Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills
+              needed for game, system, and application development.
+            </p>
+            <p class="coursePrice">2000 Rupees</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img3" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------Python-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img4.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Python</h2>
+            <p class="courseDetails">
+              Learn real-life Python skills by creating Python database apps,
+              Python web apps, Python scrapers, & many more.
+            </p>
+            <p class="coursePrice">4000 Rupees</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img4" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------C#---------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img5.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">C#</h2>
+            <p class="courseDetails">
+              An in-depth, step-by-step guide to classes, interfaces and
+              object-oriented programming (OOP) with C#.
+            </p>
+            <p class="coursePrice">2000 Rupees</p>
+            <p class="courseTime">Total time <span>30 Hrs</span></p>
+          </div>
+          <button data-tag="img5" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------Bootstrap 4-------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img6.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Bootstrap 4</h2>
+            <p class="courseDetails">
+              Master Bootstrap 4 and build real world themes while learning
+              HTML5 semantics & CSS3.
+            </p>
+            <p class="coursePrice">700 Rupees</p>
+            <p class="courseTime">Total time <span>10 Hrs</span></p>
+          </div>
+          <button data-tag="img6" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------React.Js--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img7.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">React.JS</h2>
+            <p class="courseDetails">
+              Dive in and learn React.js from scratch! Learn Reactjs, Hooks,
+              Redux, React Routing, Animations, Next.js and way more.
+            </p>
+            <p class="coursePrice">4999 Rupees</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img7" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------Angular--------------------------------- -->
+        <div class="course1">
+          <div class="courseImgDiv">
+            <img
+              class="courseImg"
+              src="./Images/img8.jpeg"
+              alt="this is image"
+            />
+          </div>
+          <div class="coursePriceDetailTimeDiv">
+            <h2 class="courseName">Angular</h2>
+            <p class="courseDetails">
+              Master Angular and build awesome, reactive web apps with the
+              successor of Angular.js
+            </p>
+            <p class="coursePrice">3999 Rupees</p>
+            <p class="courseTime">Total time <span>40 Hrs</span></p>
+          </div>
+          <button data-tag="img8" class="addtocartbtn">Add to Cart</button>
+        </div>
       </div>
     </div>
 
-      </div>
-
-      
-
+    <!-- ------------------------Footer------------------------------- -->
     <footer class="mainFooter homefooter">
       <h4>A community that Helps You in learn and Grow.</h4>
       <small>Terms And conditon's are applied</small>
       <ul>
-        <h6>Contact Us </h6>
-        <li class="footerLi" ><i class="fab fa-facebook-square"></i></li>
-        <li class="footerLi" ><i class="fab fa-twitter"></i></li>
-        <li class="footerLi" ><i class="far fa-envelope"></i></li>
+        <h6>Contact Us</h6>
+        <li class="footerLi"><i class="fab fa-facebook-square"></i></li>
+        <li class="footerLi"><i class="fab fa-twitter"></i></li>
+        <li class="footerLi"><i class="far fa-envelope"></i></li>
       </ul>
     </footer>
 

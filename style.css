@@ -1,8 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
 
 * {
   margin: 0;
@@ -10,31 +7,29 @@
 }
 
 body {
-  /* font-family: 'Newsreader', serif; */
-  /* font-family: "Ubuntu", sans-serif; */
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   background-color: #56859e;
 }
 
+
+/* ------------------------------------Navigation Bar--------------------------------- */
 .navbar {
   width: 100%;
   display: flex;
   background-color: #264653;
   height: 80px;
   gap: 5px;
-  justify-content:space-around;
+  justify-content: space-around;
   font-size: 20px;
   position: fixed;
   z-index: 2;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
   box-shadow: 0px 2px 5px #000;
   border-bottom: 3px solid #000;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-
 
 .fst_navDiv {
   width: 20%;
@@ -52,30 +47,29 @@ body {
 
 .fst_navDiv span {
   font-size: 14px;
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
 .Snd_navDiv {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    padding-right: 21px;
-    position: relative;
-}
-
-.indexSecondNav{
-justify-content: flex-end;
-}
-
-.logout_li{
-position: absolute;
-right: 58px;
-
-}
-
-.secdiv{
   display: flex;
-  justify-content: flex-end; 
+  width: 80%;
+  align-items: center;
+  padding-right: 21px;
+  position: relative;
+}
+
+.indexSecondNav {
+  justify-content: flex-end;
+}
+
+.logout_li {
+  position: absolute;
+  right: 58px;
+}
+
+.secdiv {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Snd_navDiv ul li {
@@ -85,7 +79,7 @@ right: 58px;
 
 .a_tag_elm {
   padding: 10px;
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
@@ -96,6 +90,10 @@ right: 58px;
   cursor: pointer;
 }
 
+
+
+
+/* ------------------------------------Home page Video Div--------------------------------- */
 .video_nd_txt_div {
   position: relative;
   height: 100%;
@@ -118,15 +116,14 @@ right: 58px;
   height: 100%;
   width: 100%;
   background-color: #225470;
-  /* z-index: 1; */
   opacity: 0.8;
 }
 
 .txt_div {
   position: absolute;
   z-index: 1;
-  top: 40%;
-  left: 40%;
+  top: 45%;
+  left: 38%;
   text-align: center;
   color: #fff;
   gap: 10px;
@@ -141,7 +138,7 @@ right: 58px;
   font-size: 20px;
 }
 
-.platformdetails{
+.platformdetails {
   position: absolute;
   z-index: 1;
   bottom: 30%;
@@ -155,51 +152,50 @@ right: 58px;
   align-items: center;
 }
 
-.platformdetails:hover{
-border: 2px solid black;
-cursor: pointer;
-}
 
-.logindiv{
-    visibility: hidden;
-    position: absolute;
-    top: 21%;
-    left: 555px;
-    box-sizing: border-box;
-    width: 400px;
-    height: 450px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    visibility: hidden;
-    display: flex;
-    box-shadow: 0px 0px 6px 6px grey;
-    flex-direction: column;
-    align-items: center;
+
+
+
+/* ------------------------------------Index page Login form --------------------------------- */
+.logindiv {
+  visibility: hidden;
+  position: absolute;
+  top: 21%;
+  left: 555px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  visibility: hidden;
+  display: flex;
+  box-shadow: 0px 0px 6px 6px grey;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login_heading {
-    font-size: 35px;
-    color: black;
-    text-align: center;
-    margin-top: 60px;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
 }
 
-
-#SwitchtoSignUp{
+#SwitchtoSignUp {
   color: blue;
   cursor: pointer;
   text-decoration: underline;
 }
 
 .logindiv2 {
-    text-align: center;
-    height: 60%;
-    width: 80%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 form > input {
@@ -211,61 +207,51 @@ form > input {
   height: 30px;
 }
 
-#login_form{
-    height: 100%;
-    width: 100%;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: stretch;
-
+#login_form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
 }
 
- #login-form-submit {
-      color: #fff;
-    background-color: cornflowerblue;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-    width: 60%;
-    height: 30px;
-    text-decoration: none;
-    border: 1px solid black;
-    margin: 10px auto;
-} 
+#login-form-submit {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 60%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 10px auto;
+}
 
-#login-form-submit:hover{
+#login-form-submit:hover {
   background-color: darkblue;
 }
 
-
 .CloseLoginDivBttn {
-    position: absolute;
-    top: -9px;
-    right: 0px;
-    font-size: 35px;
-    transform: rotate(45deg);
-    cursor: pointer;
+  position: absolute;
+  top: -9px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
 
 
 
-
-
-
-
-
-
-/* ------------------------------------------signup form style------------------------------ */
+/* ------------------------------------Index page SignUp Form--------------------------------- */
 #signUpForm {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  /* background: bisque; */
   justify-content: center;
   align-items: center;
 }
@@ -309,7 +295,7 @@ form > input {
   color: white;
 }
 
-#switchToLogin{
+#switchToLogin {
   color: blue;
   cursor: pointer;
   text-decoration: underline;
@@ -352,76 +338,71 @@ form > input {
 }
 
 .signDiv {
-    visibility: hidden; 
-    height: 350px;
-    width: 327px;
-    position: absolute;
-    top: 140px;
-    left: 551px;
-    margin-top: 10px;
-    border: solid 1px black;
-    border-radius: 10px;
-    background-color: black;
+  visibility: hidden;
+  height: 350px;
+  width: 327px;
+  position: absolute;
+  top: 140px;
+  left: 551px;
+  margin-top: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: black;
 }
 
-/*-----------------------------------------------------------------------------------------------------------------  */
 
 
-
-/*------------------------------ update form css------------------------------ */
-
-.updateDiv{
-    position: absolute;
-    bottom: 30%;
-    border: 1px solid black;
-    border-radius: 10px;
-    left: 38%;
-    height: 400px;
-    width: 350px;
-    visibility: hidden;
-    background: white;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0px 0px 6px 5px grey;
+/* ------------------------------------My profile page update  Form--------------------------------- */
+.updateDiv {
+  position: absolute;
+  bottom: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  left: 38%;
+  height: 400px;
+  width: 350px;
+  visibility: hidden;
+  background: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 6px 5px grey;
 }
 
-#updateform{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#updateform {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.updatebttn{
+.updatebttn {
   color: #fff;
   background-color: cornflowerblue;
   cursor: pointer;
 }
 
-.updatebttn:hover{
+.updatebttn:hover {
   background-color: darkblue;
 }
 
-#updateform > input{
+#updateform > input {
   width: 250px;
 }
 
-
-#closeUpdateDivBttn{
-    position: absolute;
-    top: -4px;
-    right: 0px;
-    font-size: 35px;
-    transform: rotate(45deg);
-    cursor: pointer;
+#closeUpdateDivBttn {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
-
-#updateFormbutton{
+#updateFormbutton {
   color: #fff;
   background-color: cornflowerblue;
   cursor: pointer;
@@ -439,61 +420,58 @@ form > input {
 
 
 
-/*------------------------------ update form css end------------------------------ */
 
-
-/* feedback form css */
-
-#feedbackForm{
-    height: 400px;
-    position: absolute;
-    top: 18%;
-    left: 38%;
-    background: white;
-    width: 350px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 6px 5px grey;
-    border: 1px solid black;
-    border-radius: 10px;
-    visibility: hidden;
+/* ------------------------------------My profile page Feedback  Form--------------------------------- */
+#feedbackForm {
+  height: 400px;
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  background: white;
+  width: 350px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 6px 5px grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  visibility: hidden;
 }
 
-#closeFeedbackForm{
-    position: absolute;
-    top: -4px;
-    right: 0px;
-    font-size: 35px;
-    transform: rotate(45deg);
-    cursor: pointer;
+#closeFeedbackForm {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
 }
 
-#feedForm{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+#feedForm {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-.feedbackInput{
-margin-bottom: 10px;
-width: 300px;
+.feedbackInput {
+  margin-bottom: 10px;
+  width: 300px;
 }
 
-#feedForm > textarea{
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-text-align: left;
-width: 300px;
+#feedForm > textarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 300px;
 }
 
-.feedBackSumbitButton{
+.feedBackSumbitButton {
   color: #fff;
   background-color: cornflowerblue;
   cursor: pointer;
@@ -505,7 +483,7 @@ width: 300px;
   border: 1px solid black;
 }
 
-.feedBackResetButton{
+.feedBackResetButton {
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
@@ -515,23 +493,25 @@ width: 300px;
   border: 1px solid black;
 }
 
-.feedBackResetButton:hover{
-  color: #fff; 
-   background-color: cornflowerblue;
+.feedBackResetButton:hover {
+  color: #fff;
+  background-color: cornflowerblue;
 }
 
-.feedBackSumbitButton:hover{
-    background-color: darkblue;
+.feedBackSumbitButton:hover {
+  background-color: darkblue;
 }
 
-/* feedback from css ends */
 
-#allcourses{
+
+
+
+/* ------------------------------------Home Page Courses info Div--------------------------------- */
+#allcourses {
   padding-top: 85px;
-  /* background-color: burlywood; */
 }
 
-.courses{
+.courses {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -543,35 +523,34 @@ width: 300px;
   min-height: calc(100vh - 213px);
 }
 
-.courseHeading{
+.courseHeading {
   text-align: center;
   text-decoration: underline;
 }
 
-
-.courseName{
-    text-align: center;
-    text-decoration: underline;
-    margin: 10px;
+.courseName {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px;
 }
 
-.course1{
-    height: 340px;
-    width: 30%;
-    background-color: #1f586e;
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 2em 1em 4em / 0.5em 3em;
-    margin-top: 45px;
-    position: relative;
-    display: flex;
-    gap: 7px;
-    transform: scale(1);
-    transition: transform.5s, opacity.5s;
-    color: whitesmoke;
+.course1 {
+  height: 340px;
+  width: 30%;
+  background-color: #1f586e;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2em 1em 4em / 0.5em 3em;
+  margin-top: 45px;
+  position: relative;
+  display: flex;
+  gap: 7px;
+  transform: scale(1);
+  transition: transform.5s, opacity.5s;
+  color: whitesmoke;
 }
 
-.course1:hover{
+.course1:hover {
   transform: scale(1.03);
   opacity: 0.9;
   box-sizing: border-box;
@@ -579,29 +558,27 @@ width: 300px;
   color: antiquewhite;
 }
 
-
-.courseImgDiv{
+.courseImgDiv {
   height: 250px;
-  /* background: aqua; */
   width: 240%;
   margin: 5px;
 }
 
-.courseImg{
+.courseImg {
   height: 99%;
   width: 99%;
   border-radius: 8px;
 }
 
-.coursePrice{
-margin-top: 30px;
+.coursePrice {
+  margin-top: 30px;
 }
 
-.courseTime span{
-font-weight: 800;
+.courseTime span {
+  font-weight: 800;
 }
 
-.addtocartbtn{
+.addtocartbtn {
   position: absolute;
   bottom: 35px;
   right: 60px;
@@ -612,16 +589,16 @@ font-weight: 800;
   font-weight: 700;
 }
 
-.addtocartbtn:hover{
- background-color: #1f586e;
- color: whitesmoke;
+.addtocartbtn:hover {
+  background-color: #1f586e;
+  color: whitesmoke;
 }
 
 
 
 
-/* -----------MYProfile page css---------------- */
-.container{
+/* ------------------------------------My Profile Page--------------------------------- */
+.container {
   margin-top: 0px;
   position: absolute;
   top: 150px;
@@ -632,13 +609,13 @@ font-weight: 800;
   flex-direction: column;
 }
 
-.container h1{
+.container h1 {
   color: whitesmoke;
   display: flex;
   gap: 50px;
 }
 
-.content{
+.content {
   width: 250px;
   background: aliceblue;
   height: 60px;
@@ -651,21 +628,20 @@ font-weight: 800;
   cursor: pointer;
 }
 
-.fas{
-font-size: 28px;
+.fas {
+  font-size: 28px;
 }
 
-.feedBackDiv{
-width: 200px;
+.feedBackDiv {
+  width: 200px;
 }
 .feedBackDiv > h3 {
-margin-right: 40px;
+  margin-right: 40px;
 }
 
-.secondContainer{
+.secondContainer {
   display: flex;
   justify-content: space-around;
-  /* margin: auto; */
   align-content: center;
   align-items: center;
   height: inherit;
@@ -673,21 +649,15 @@ margin-right: 40px;
 
 
 
-
-
-
-/* -----------MYProfile page css end---------------- */
-
-
-.cart{
-/* background-color: crimson; */
-width: 100px;
-font-size: 15px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: black;
-flex-direction: row;
+/* ------------------------------------Cart Page--------------------------------- */
+.cart {
+  width: 100px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: row;
 }
 
 .cart span {
@@ -696,83 +666,67 @@ flex-direction: row;
 }
 
 .cart a {
-color: white;
-text-decoration: none;
-margin-right: 5px;
-display: flex;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+  display: flex;
 }
 
-.cart h2{
-margin: 0 5px;
-/* margin-right: 5px; */
+.cart h2 {
+  margin: 0 5px;
 }
 
 
 
 
 
-
-/* footer................ */
-
-
-.mainFooter{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    display: flex;
-    color: antiquewhite;
-    background-color: #2f3e46;
-    flex-direction: column;
-    gap: 40px;
-    height: 133px;
+/* ------------------------------------Footer CSS--------------------------------- */
+.mainFooter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  display: flex;
+  color: white;
+  background-color: #2f3e46;
+  flex-direction: column;
+  gap: 40px;
+  height: 133px;
 }
 
 .mainFooter ul {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
-    list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  list-style-type: none;
 }
 
-.mainFooter ul h6{
-    display: flex;
-    align-items: center;
+.mainFooter ul h6 {
+  display: flex;
+  align-items: center;
 }
 
-.footerLi i{
+.footerLi i {
   font-size: 25px;
 }
 
-
-.footerLi i:hover{
+.footerLi i:hover {
   cursor: pointer;
 }
 
-
-
-
-.profileFooter{
+.profileFooter {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
 
-/* .cartFooter{
-  position: absolute;
-  bottom:auto;
-  width: 100%;
-} */
 
 
 
 
-/* ----------------cart page----------------- */
-
-
-
+/* ------------------------------------Cart Page Product Cointainer CSS--------------------------------- */
 .product_container {
   max-width: 710px;
   display: flex;
@@ -790,43 +744,43 @@ margin: 0 5px;
   margin-bottom: 105px;
 }
 
-.product_header{
-width: 100%;
-max-width: 710px;
-display: flex;
-justify-content: flex-start;
-border-bottom: 4px solid lightgrey;
-margin: 0 auto;
+.product_header {
+  width: 100%;
+  max-width: 710px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
 }
 
-.product_title{
+.product_title {
   width: 45%;
   border-bottom: 1px solid lightgray;
 }
 
-.price{
-width: 15%;
-border-bottom: 1px solid lightgray;
-display: flex;
-align-items: center;
+.price {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
 }
 
 .quantity {
-width: 30%;
-border-bottom: 1px solid lightgrey;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .total {
-width: 10%;
-border-bottom: 1px solid lightgray;
-display: flex;
-align-items: center;
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
 }
 
-.product{
+.product {
   position: relative;
   width: 45%;
   display: flex;
@@ -838,14 +792,14 @@ align-items: center;
 }
 
 .product > h3 {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.products{
-display: contents;
+.products {
+  display: contents;
 }
 
-.basketTotalContainer{
+.basketTotalContainer {
   display: block;
   justify-content: flex-end;
   position: relative;
@@ -853,45 +807,43 @@ display: contents;
   padding: 10px 0;
 }
 
-.basketTotalTitle{
+.basketTotalTitle {
   position: absolute;
   right: 0;
 }
 
-
-
-
 .payment_button {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    color: #fff;
-    background-color: cornflowerblue;
-    cursor: pointer;
-    padding: 7px;
-    margin-top: 10px;
-    border-radius: 10px;
-    width: 20%;
-    height: 33px;
-    text-decoration: none;
-    border: 1px solid black;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 20%;
+  height: 33px;
+  text-decoration: none;
+  border: 1px solid black;
 }
 
 .payment_button:hover {
   background-color: darkblue;
 }
 
-.basketTotal{
-width: 10%;
+.basketTotal {
+  width: 10%;
 }
 
-.cartImg{
+.cartImg {
   height: 200px;
   width: 220px;
   border: 1px solid black;
 }
 
-.cancelbutton{
+
+.cancelbutton {
   position: absolute;
   font-size: 25px;
   color: black;
@@ -903,8 +855,9 @@ width: 10%;
   transform: rotate(45deg);
 }
 
+/* ------------------------------------Payment Page CSS--------------------------------- */
 
-.paymentDiv{
+.paymentDiv {
   display: flex;
   top: 30%;
   left: 27.9%;
@@ -921,15 +874,14 @@ width: 10%;
   border-radius: 10px;
 }
 
-.col{
+.col {
   display: flex;
   justify-content: space-between;
   width: 50%;
 }
 
-
 /* mycourse page style -----------*/
-.courseContainer{
+.courseContainer {
   width: 100%;
   height: 200px;
   background-color: coral;
