@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <title>iSchool</title>
@@ -12,19 +12,14 @@
 
     <nav class="navbar">
       <div class="fst_navDiv">
-        <a class="" href="index.php">iSchool</a>
-        <span class="">Learn and Implement </span>
+        <a>iSchool</a>
+        <span >Learn and Implement </span>
       </div>
 
-      <div class="Snd_navDiv">
+      <div class="Snd_navDiv indexSecondNav">
         <ul class=" ">
           <li id="Login" class="a_tag_elm">Log-In</li>
-
           <li><a href="#" id="formDisplay" class="a_tag_elm ">Sign up</a></li>
-
-          <li class="nav-item custom-nav-item">
-            <a href="" class="a_tag_elm">Contact</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -37,9 +32,7 @@
           <source src="./video.mp4" />
         </video>
       </div>
-
       <div class="blue_color_div"></div>
-
       <div class="txt_div">
         <h1>Welcome to iSchool</h1>
         <small>Learn and Implement</small>
@@ -54,11 +47,12 @@
     <!-- end video bckground-->
 
     <div class="logindiv" id="loginBox">
-      <div class="logindiv2">
-        <h1 class="login_heading">Log-in</h1>
-        <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
 
-        <form id="login-form">
+      <h1 class="login_heading">Log-in</h1>
+      <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
+
+      <div class="logindiv2">
+        <form id="login_form">
           <input
             type="text"
             name="username"
@@ -75,9 +69,9 @@
             placeholder="Password"
           /> <br>
           <input type="submit" value="Login" id="login-form-submit" />
-          <P class="para">sign Up here <a id="SwitchtoSignUp">Sign-Up</a></P>
         </form>
       </div>
+      <P class="para">Don't have Account ?<a id="SwitchtoSignUp"> Sign-Up</a> Here.</P>
     </div>
 
     <div class="signDiv" id="signBox">
@@ -122,7 +116,7 @@
         />
         <input type="submit" id="signUpButton" value="Create Account" />
       </form>
-      <p class="switchText">Allready Have Account? <strong>Login</strong> </p>
+      <p class="switchText">Allready Have Account? <strong id="switchToLogin">Login</strong> </p>
     </div>
     </div>
 

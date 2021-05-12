@@ -1,14 +1,11 @@
- const login = document.getElementById("Login")
- const loginDiv = document.getElementById("loginBox");
- const closeLoginDiv = document.getElementById("closelogindiv")
-//  const loginForm = document.getElementById("login-form");
-// const loginButton = document.getElementById("login-form-submit");
-// const loginErrorMsg = document.getElementById("login-error-msg");
+const login = document.getElementById("Login")
+const loginDiv = document.getElementById("loginBox");
+const closeLoginDiv = document.getElementById("closelogindiv")
 let feedbackForm = document.querySelector("#feedbackForm");
 const feedBackDiv = document.querySelector(".feedBackDiv");
 let updateDiv = document.querySelector(".updateDiv");
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
-const signDiv = document.getElementById("signBox");
+
 
 
 
@@ -37,7 +34,7 @@ const closeFeedbackFormBttn = document.getElementById("closeFeedbackForm");
 function hideFeedbackForm() {
   feedbackForm.style.visibility = "hidden";
 }
-if (closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFeedbackForm);
+if(closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFeedbackForm);
 
 
 
@@ -62,7 +59,7 @@ const closeUpdateDivBttn = document.getElementById("closeUpdateDivBttn");
 function hideUpdateForm(){
     updateDiv.style.visibility = "hidden";
 }
-if (closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateForm);
+if(closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateForm);
 
 
 
@@ -70,16 +67,62 @@ if (closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateFo
 //  login box js......................
 function showLoginDiv() {
     // alert ("hello")
-    signDiv.style.visibility = "hidden";
+    signUpDiv.style.visibility = "hidden";
     loginDiv.style.visibility = "visible";
 }
-
-
-
 
 function hideLoginDiv() {
     loginDiv.style.visibility = "hidden";
 };
 
-if(login ) login.addEventListener('click', showLoginDiv);
+if(login)login.addEventListener('click', showLoginDiv);
 if(closeLoginDiv)closeLoginDiv.addEventListener('click' , hideLoginDiv);
+
+
+
+const SwitchtoSignUp = document.getElementById("SwitchtoSignUp");
+/**
+ * switching between login form to signup from
+ */
+function switchToSignUpFrom(){
+    signUpDiv.style.visibility = "visible";
+    loginDiv.style.visibility = "hidden";
+}
+
+
+if(SwitchtoSignUp)SwitchtoSignUp.addEventListener("click", switchToSignUpFrom);
+
+// --------------------------------------------------------------------
+
+const switchToLogin = document.getElementById("switchToLogin");
+/**
+ * Switch  form to signup to login 
+ */
+
+function switchLoginFrom(){
+    signUpDiv.style.visibility = "hidden";
+    loginDiv.style.visibility = "visible";
+}
+
+if(switchToLogin)switchToLogin.addEventListener("click", switchLoginFrom);
+
+
+
+const updateFormbutton = document.getElementById("updateFormbutton");
+
+/**
+ * cheching confirm password and password in update form 
+ */
+
+function updatefrom(event) {
+    let updatePassword = document.getElementById("updatePassword").value;
+    let updateConfirmPassword = document.getElementById("updateConfirmPassword").value;
+
+    if(updatePassword != updateConfirmPassword) {
+    event.preventDefault();
+    alert("confirm Password  and password must be same");
+    return false;
+}
+}
+
+if(updateFormbutton)updateFormbutton.addEventListener("click", updatefrom);

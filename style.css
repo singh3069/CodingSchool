@@ -13,6 +13,7 @@ body {
   /* font-family: 'Newsreader', serif; */
   /* font-family: "Ubuntu", sans-serif; */
   font-family: 'Josefin Sans', sans-serif;
+  background-color: #56859e;
 }
 
 .navbar {
@@ -31,8 +32,9 @@ body {
   border-bottom: 3px solid #000;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
+
+
 
 .fst_navDiv {
   width: 20%;
@@ -56,10 +58,13 @@ body {
 .Snd_navDiv {
     display: flex;
     width: 80%;
-    /* justify-content: flex-end; */
     align-items: center;
     padding-right: 21px;
     position: relative;
+}
+
+.indexSecondNav{
+justify-content: flex-end;
 }
 
 .logout_li{
@@ -70,9 +75,7 @@ right: 58px;
 
 .secdiv{
   display: flex;
-   justify-content: flex-end; 
-  
-
+  justify-content: flex-end; 
 }
 
 .Snd_navDiv ul li {
@@ -82,7 +85,7 @@ right: 58px;
 
 .a_tag_elm {
   padding: 10px;
-  color: bisque;
+  color:white;
   text-decoration: none;
 }
 
@@ -158,47 +161,45 @@ cursor: pointer;
 }
 
 .logindiv{
-  visibility: hidden;
-    height: 300px;
-    width: 500px;
+    visibility: hidden;
     position: absolute;
-    top: 200px;
-    left: 510px;
-    /* padding-top: 65px; */
-    margin-top: 10px;
-    text-align: center;
+    top: 21%;
+    left: 555px;
     box-sizing: border-box;
-    border: solid 1px black;
+    width: 400px;
+    height: 450px;
+    background: white;
+    border: 1px solid black;
     border-radius: 10px;
-    background-color: black;
+    visibility: hidden;
+    display: flex;
+    box-shadow: 0px 0px 6px 6px grey;
+    flex-direction: column;
+    align-items: center;
 }
 
 .login_heading {
-    font-size: 25px;
-    top: 12px;
-    position: absolute;
-    margin-bottom: 5px;
-    left: 180px;
-    color: white;
-    font-style: italic;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
 }
-.para{
-  color: #fff;
-}
+
 
 #SwitchtoSignUp{
   color: blue;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .logindiv2 {
-  display: flex;
-  height: 155px;
-  padding-top: 65px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
+    text-align: center;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 form > input {
@@ -210,40 +211,48 @@ form > input {
   height: 30px;
 }
 
+#login_form{
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
  #login-form-submit {
-  margin-top: 10px;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  height: 30px;
-  width: 60px;
-  background-color: rgb(26, 75, 167);
-  font-size: 14px;
+      color: #fff;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    margin: 10px auto;
 } 
+
+#login-form-submit:hover{
+  background-color: darkblue;
+}
 
 
 .CloseLoginDivBttn {
-  position: absolute;
-  top: 0px;
-  right: 6px;
-  font-size: 20px;
-  transform: rotate(45deg);
-  cursor: pointer;
-  color: white;
+    position: absolute;
+    top: -9px;
+    right: 0px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
 
-.signDiv {
-    visibility: hidden; 
-    height: 350px;
-    width: 327px;
-    position: absolute;
-    top: 140px;
-    left: 551px;
-    margin-top: 10px;
-    border: solid 1px black;
-    border-radius: 10px;
-    background-color: black;
-}
+
+
+
 
 
 
@@ -300,6 +309,12 @@ form > input {
   color: white;
 }
 
+#switchToLogin{
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #closeForm {
   position: absolute;
   top: 0;
@@ -334,6 +349,19 @@ form > input {
   justify-content: center;
   height: 50px;
   align-items: flex-end;
+}
+
+.signDiv {
+    visibility: hidden; 
+    height: 350px;
+    width: 327px;
+    position: absolute;
+    top: 140px;
+    left: 551px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: black;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------  */
@@ -431,10 +459,11 @@ form > input {
     box-shadow: 0px 0px 6px 5px grey;
     border: 1px solid black;
     border-radius: 10px;
+    visibility: hidden;
 }
 
 #closeFeedbackForm{
-  position: absolute;
+    position: absolute;
     top: -4px;
     right: 0px;
     font-size: 35px;
@@ -732,8 +761,8 @@ margin: 0 5px;
 }
 
 /* .cartFooter{
-  position: fixed;
-  bottom:0px;
+  position: absolute;
+  bottom:auto;
   width: 100%;
 } */
 
@@ -829,17 +858,27 @@ display: contents;
   right: 0;
 }
 
-.payment_button{
-  border: none;
-  position: absolute;
-  top: 40px;
-  right: 0;
-  padding: 7px;
-  cursor: pointer;
-  color: white;
-  background-color: blue;
-  box-shadow: 0px 0px 2px 2px blue;
-  border-radius: 3px;
+
+
+
+.payment_button {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    color: #fff;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 20%;
+    height: 33px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.payment_button:hover {
+  background-color: darkblue;
 }
 
 .basketTotal{

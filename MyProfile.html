@@ -15,14 +15,18 @@
 
 <nav class="navbar">
       <div class="fst_navDiv">
-        <a class="" href="index.php">iSchool</a>
+        <a class="" href="home.html">iSchool</a>
         <span class="">Learn and Implement </span>
       </div>
       <div class="Snd_navDiv">
         <ul class=" ">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
           <li class=""><a  onclick="document.location='home.html#allcourses'"class="a_tag_elm">Courses</a></li>
+          <li class=""><a  href="index.html"class="a_tag_elm">Logout</a></li>
         </ul>
+      </div>
+      <div class="cart">
+      <a href="cart.html"><h2>Cart</h2><span id="cartSpan">0</span></a>
       </div>
 </nav>
 
@@ -45,8 +49,9 @@
         <i class="fas fa-comment"></i>
         <h3>Feedback</h3>
       </div>
-      
       </div>
+
+
     </div>
 
     <div id="feedbackForm">
@@ -60,6 +65,7 @@
     </form>
     </div>
 
+
       <div class="updateDiv" id="updateBox">
         <h2>Update Your Profile Here !</h2>
         <p id="closeUpdateDivBttn">+</p>
@@ -67,8 +73,8 @@
         <input type="text" id="username" name="" placeholder="Name" required />
         <input type="email" id="email" placeholder="Email"  required />
         <input type="text" id="course" placeholder="Course" required />
-        <input type="password" id="passwords" placeholder="Password"   required />
-        <input type="password" id="confirmPassword" placeholder="Confirm Password"  required /> <br>
+        <input type="password" id="updatePassword" placeholder="Password"   required />
+        <input type="password" id="updateConfirmPassword" placeholder="Confirm Password"  required /> <br>
         <!-- <input type="submit" class="updatebttn " id="matchingbttn" value="Update" > -->
         <button type="submit" class="updatebttn" id="updateFormbutton" >Update</button>
         </form>
