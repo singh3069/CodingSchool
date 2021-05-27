@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <title>Cart</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar">
       <div class="fst_navDiv">
-        <a class="" href="home.html">iSchool</a>
+        <a class="" href="home.html">CodingSchool</a>
         <span class="">Learn and Implement </span>
       </div>
 
       <div class="Snd_navDiv">
-        <ul class=" ">
+        <ul class="">
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
-          <li class=""><a  onclick="document.location='home.html#allcourses'"class="a_tag_elm">Courses</a></li>
-          <li class=""><a href="MyProfile.html" class="a_tag_elm">My Profile</a></li>
+          <li class="">
+            <a
+              onclick="document.location='home.html#allcourses'"
+              class="a_tag_elm"
+              >Courses</a
+            >
+          </li>
+          <li class="">
+            <a href="MyProfile.html" class="a_tag_elm">My Profile</a>
+          </li>
         </ul>
       </div>
 
       <div class="cart">
-        <a href="cart.html" class="a_tag_elm"><h2>Cart</h2><span id="cartSpan">0</span></a>
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
       </div>
     </nav>
-    
 
     <div class="product_container">
-        <div class="product_header">
-            <h5 class="product_title">COURSE</h5>
-            <h5 class="price">PRICE</h5>
-            <h5 class="quantity">QUANTITY</h5>
-            <h5 class="total">TOTAL</h5>
-        </div>
+      <div class="product_header">
+        <h5 class="product_title">COURSE</h5>
+        <h5 class="price">PRICE</h5>
+        <h5 class="quantity">QUANTITY</h5>
+        <h5 class="total">TOTAL</h5>
+      </div>
 
-        <div class="products" id="productsPurchaseMessage">
-
-        </div>
-
+      <div class="products">
+        <p id="productsPurchaseMessage"></p>
+      </div>
     </div>
 
-
     <!-- ----------------payment form hmtl-------- -->
-    <!-- <div class="paymentDiv">
-      <form class="paymentDivForm">
-              <h3>Payment</h3>
-                <input type="text" placeholder="Name on card" required>
-                <input type="number" placeholder="Card Number" required>
-                <input type="month" placeholder="Expiry Month" required>
-                <input type="password" placeholder="cvv" required>
-                <button type="submit" class="confirmPaymentButton">Confirm Payment</button>
-                <button type="reset" class="cancelPaymentButton">Cancel Payment</button>
-                <input type="submit" value="Confirm Payment" class="confirmPaymentButton">
-                <input type="reset" value="Cancel Payment" class="cancelPaymentButton">
+    <div class="paymentDiv">
+      <form
+        class="paymentDivForm"
+        onsubmit="addingEverythingToCoursesPurchased()"
+      >
+        <h3>Payment</h3>
+        <input type="text" placeholder="Name on card" required />
+        <input type="number" placeholder="Card Number" required />
+        <input type="month" placeholder="Expiry Month" required />
+        <input type="password" placeholder="cvv" required />
+        <button type="submit" class="confirmPaymentButton">
+          Confirm Payment
+        </button>
+        <button type="reset" class="cancelPaymentButton">Cancel Payment</button>
+        <!-- <input type="submit" value="Confirm Payment" class="confirmPaymentButton"> -->
+        <!-- <input type="reset" value="Cancel Payment" class="cancelPaymentButton"> -->
       </form>
-            <strong class="CheckOutPayment">  </strong>
-    </div> -->
-    
-            <!-- <div class="nameDiv col">
+      <strong class="CheckOutPayment"> </strong>
+    </div>
+
+    <!-- <div class="nameDiv col">
               <label for="cardname">Name on Card</label>
               <input type="text" id="cardname" name="cardname"  maxlength="20" required>
             </div>
@@ -87,7 +102,6 @@
               <input type="submit" class="confirmPaymentButton"  value="Confirm Payment" >
               <input  type="button" class="cancelPaymentButton" value="Cancel Payment">
             </div> -->
-    
 
     <!-- <footer class="mainFooter cartFooter">
       <h4>A community that Helps You in learn and Grow.</h4>
@@ -100,9 +114,8 @@
       </ul>
     </footer> -->
 
-
     <script src="./CartJavascript/script.js"></script>
     <script src="./CartJavascript/cart.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -16,7 +16,7 @@
   <body>
     <nav class="navbar">
       <div class="fst_navDiv">
-        <a class="" href="home.html">iSchool</a>
+        <a class="" href="home.html">CodingSchool</a>
         <span class="">Learn and Implement </span>
       </div>
       <div class="Snd_navDiv">
@@ -24,7 +24,7 @@
           <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li>
           <li class="">
             <a
-              onclick="document.location='home.html#allcourses'"
+              onclick="document.location = 'home.html#allcourses'"
               class="a_tag_elm"
               >Courses</a
             >
@@ -32,29 +32,33 @@
           <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li>
         </ul>
       </div>
+
       <div class="cart">
         <a href="cart.html" class="a_tag_elm"
           ><h2>Cart</h2>
           <span id="cartSpan">0</span></a
         >
       </div>
+      <!-- <div class="cart">
+        <a href="cart.html" class="a_tag_elm"
+          ><h2>Cart</h2>
+          <span id="cartSpan">0</span></a
+        >
+      </div> -->
     </nav>
 
     <div class="container">
-      <h1>
-        Welcome
-        <p> </p>
-      </h1>
+      <h1>Welcome</h1>
       <div class="secondContainer">
         <div class="manageYourAccountDIv content">
           <i class="fas fa-user"></i>
           <h3>Update Your Profile</h3>
         </div>
 
-        <div class="coursesPurchasedDiv content">
+        <a class="coursesPurchasedDiv content" href="mycourses.html" >
           <i class="fas fa-book"></i>
           <h3>Courses Purchased</h3>
-        </div>
+        </a>
 
         <div class="feedBackDiv content">
           <i class="fas fa-comment"></i>
@@ -66,7 +70,7 @@
     <div id="feedbackForm">
       <h2>Submit Your Feedback Here !</h2>
       <p id="closeFeedbackForm">+</p>
-      <form action="" id="feedForm">
+      <form id="feedForm">
         <input
           type="text"
           placeholder="Enter Your username"
@@ -86,8 +90,8 @@
     <div class="updateDiv" id="updateBox">
       <h2>Update Your Profile Here !</h2>
       <p id="closeUpdateDivBttn">+</p>
-      <form action="" id="updateform">
-        <input type="text" id="username" name="" placeholder="Name" required />
+      <form id="updateform">
+        <input type="text" id="username" name="name" placeholder="Name" required />
         <input type="email" id="email" placeholder="Email" required />
         <input type="text" id="course" placeholder="Course" required />
         <input
@@ -113,13 +117,15 @@
       <h4>A community that Helps You in learn and Grow.</h4>
       <small>Terms And conditon's are applied</small>
       <ul>
-        <h6>Contact Us</h6>
+        <stong>Contact Us</stong>
         <li class="footerLi"><i class="fab fa-facebook-square"></i></li>
         <li class="footerLi"><i class="fab fa-twitter"></i></li>
         <li class="footerLi"><i class="far fa-envelope"></i></li>
       </ul>
     </footer>
 
+    <script src="./CartJavascript/script.js"></script>
+    <script src="./CartJavascript/cart.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

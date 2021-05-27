@@ -3,7 +3,7 @@
  */
  function disableAddedProductBtns() {
   const addedTags = getitemsFromLocalStorage().tagsArray
-  console.log(addedTags)
+  // console.log(addedTags)
   if (addedTags.length > 0) {
     for (let index = 0; index < addedTags.length; index++) {
       const tag = addedTags[index]

@@ -69,7 +69,7 @@ const getitemsFromLocalStorage = () => {
 }
 
 /**
- * Stor product item in localStorage
+ * Store products item in localStorage
  * @param {Object} obj item object
  */
 function setItemsInLocalStorage(obj) {
@@ -82,7 +82,7 @@ function setItemsInLocalStorage(obj) {
  */
 function addProductInCart(product) {
   let cartItems = getitemsFromLocalStorage().rawObject
-  console.log(cartItems)
+  // console.log(cartItems)
 
   if (cartItems != null) {
     if (cartItems[product.tag] == undefined) {
