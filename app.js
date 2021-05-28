@@ -21,7 +21,6 @@ function hideFeedbackForm() {
 if(closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFeedbackForm);
 
 
-
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
 
 /** 

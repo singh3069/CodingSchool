@@ -903,3 +903,25 @@ form > input {
 }
 /* ----------------- */
 
+ /* if (cartItems && productContainer) {
+    productContainer.innerHTML = ''
+    cartItems.map((item) => {
+      productContainer.innerHTML += `
+          <div class="product">
+          <p class="cancelbutton" data-id=${item.name
+            .split(' ')
+            .join('')} onClick="removeItemFromCartHandler(event)">+</P>
+          <img class="cartImg" src="./Images/${item.tag}.jpeg">
+          <h3>${item.name}</h3>
+          </div>
+          <div class="price">$${item.price}.00</div>
+          <div class="quantity">
+          
+          <span>${item.inCart}</span>
+          
+          </div>
+          <div class="total">
+              $${item.inCart * item.price}.00
+          </div>
+          `
+    }) */
