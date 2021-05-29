@@ -1,25 +1,27 @@
 
-window.onbeforeunload = function () {};  
+// window.onbeforeunload = function () {};
+
+
 function coursesPurchased() {
-  let courseContainer = document.getElementById("courseContainer");
+//   let courseContainer = document.getElementById("courseContainer");
 
-  const productsInCart = localStorage.getItem("productsInCart");
+//   const productsInCart = localStorage.getItem("productsInCart");
 
-  localStorage.setItem("purchasedCourse", productsInCart);
+//   localStorage.setItem("purchasedCourse", productsInCart);
 
-  window.localStorage.removeItem("productsInCart");
+//   window.localStorage.removeItem("productsInCart");
 
   const itemPurchasedObj =
     JSON.parse(localStorage.getItem("purchasedCourse")) || {};
   const purchasedObjValues = Object.values(itemPurchasedObj);
   // const purchasedObjKey = Object.keys(itemPurchasedObj);
 
-  console.log(itemPurchasedObj);
-  console.log(purchasedObjValues);
+//   console.log(itemPurchasedObj);
+//   console.log(purchasedObjValues);
   // console.log(purchasedObjKey);
 
   if (purchasedObjValues && courseContainer) {
-    courseContainer.innerHTML = "";
+    courseContainer.innerHTML = ""
     purchasedObjValues.map((item) => {
       courseContainer.innerHTML += `
           <div class="coursePurchased">

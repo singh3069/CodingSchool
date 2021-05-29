@@ -1,6 +1,6 @@
 
 function removeItemFromCartHandler(event) {
-  console.log(event)
+  // console.log(event)
   const productID = event.target.dataset.id
   const oldData = Object.values(
     JSON.parse(localStorage.getItem('productsInCart'))
@@ -88,9 +88,20 @@ if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPaym
 
 
 function addingEverythingToCoursesPurchased() {
-  alert('After the Payment submission Purchased Course will be  added to Courses Purchased section in Myprofile');
-  displayItemsInCartLayout();
   showCartItemsCount();
+  displayItemsInCartLayout();
+  alert('After the Payment submission Purchased Course will be  added to Courses Purchased section in Myprofile');
+  let courseContainer = document.getElementById("courseContainer");
+
+  const productsInCart = localStorage.getItem("productsInCart");
+
+  localStorage.setItem("purchasedCourse", productsInCart);
+
+  window.localStorage.removeItem("productsInCart");
+
+  // if(window.location = "mycourses.html"){
+  //   coursesPurchased();
+  // }
 }
 
 
@@ -111,8 +122,8 @@ function addingEverythingToCoursesPurchased() {
 //   // const purchasedObjKey = Object.keys(itemPurchasedObj);
 
 
-//   console.log(itemPurchasedObj);
-//   console.log(purchasedObjValues);
+//   // console.log(itemPurchasedObj);
+//   // console.log(purchasedObjValues);
 //   // console.log(purchasedObjKey);
 
 //   if (purchasedObjValues && courseContainer) {
