@@ -31,7 +31,7 @@
             >
           </li>
           <li class="">
-            <a href="MyProfile.html" class="a_tag_elm">My Profile</a>
+            <a href="myprofile.html" class="a_tag_elm">My Profile</a>
           </li>
         </ul>
       </div>
@@ -63,45 +63,24 @@
         class="paymentDivForm"
         onsubmit="addingEverythingToCoursesPurchased()"
       >
-        <h3>Payment</h3>
+      <h1> <u>Complete Your Payment</u> </h1>
+        <strong class="CheckOutPayment"> </strong>
         <input type="text" placeholder="Name on card" required />
         <input type="number" placeholder="Card Number" required />
         <input type="month" placeholder="Expiry Month" required />
         <input type="password" placeholder="cvv" required />
-        <button type="submit" class="confirmPaymentButton">
+        <div class="paymentBttnDiv">
+        <button type="submit" class="confirmPaymentButton paymentBttn">
           Confirm Payment
         </button>
-        <button type="reset" class="cancelPaymentButton">Cancel Payment</button>
-        <!-- <input type="submit" value="Confirm Payment" class="confirmPaymentButton"> -->
-        <!-- <input type="reset" value="Cancel Payment" class="cancelPaymentButton"> -->
+        <button type="reset" class="cancelPaymentButton paymentBttn">Cancel Payment</button>
+        </div>
       </form>
-      <strong class="CheckOutPayment"> </strong>
+      <footer class="paymentFooter">
+        <P><strong>WARNING-</strong> <br/>This Project is for Practice Purpose so Please <b><u>Don't </u></b> . Fill Your True Card Details If Any Thing Happens I will Not Be Responsible For it !</P>
+      </footer>
     </div>
 
-    <!-- <div class="nameDiv col">
-              <label for="cardname">Name on Card</label>
-              <input type="text" id="cardname" name="cardname"  maxlength="20" required>
-            </div>
-            <div class="cardNoDiv col">
-              <label for="cardnumber">Card number</label>
-              <input type="tel" id="cardnumber" name="cardnumber"  inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"   required>
-            </div>
-            <div class="expMonthDiv col">
-              <label for="expdate">Exp Date</label>
-              <input type="month" id="expdate" name="expdate"  pattern="[0-9]*" inputmode="numeric" required>
-            </div>
-            <div class="col">
-                <label for="cvv">CVV</label>
-                <input type="password" id="cvv" name="cvv"  pattern="[0-9]*" inputmode="numeric" maxlength="3" required>
-            </div>
-            
-            <strong class="CheckOutPayment">  </strong>
-
-            <div class="col">
-
-              <input type="submit" class="confirmPaymentButton"  value="Confirm Payment" >
-              <input  type="button" class="cancelPaymentButton" value="Cancel Payment">
-            </div> -->
 
     <!-- <footer class="mainFooter cartFooter">
       <h4>A community that Helps You in learn and Grow.</h4>

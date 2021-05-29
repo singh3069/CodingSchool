@@ -1,53 +1,69 @@
 let products = [
   {
-    name: 'HTML and CSS',
-    tag: 'img1',
+    id: 1,
+    name: "HTML and CSS",
+    tag: "img1",
     price: 1000,
-    inCart: 0
+    inCart: 0,
+    idName: "Html_CSS_Course",
   },
   {
-    name: 'JavaScript',
-    tag: 'img2',
+    id: 2,
+    name: "JavaScript",
+    tag: "img2",
     price: 2000,
-    inCart: 0
+    inCart: 0,
+    idName: "JavaScript_Course",
   },
   {
-    name: 'C++',
-    tag: 'img3',
+    id: 3,
+    name: "C++",
+    tag: "img3",
     price: 2000,
-    inCart: 0
+    inCart: 0,
+    idName: "C_Plus_Course",
   },
   {
-    name: 'Python',
-    tag: 'img4',
+    id: 4,
+    name: "Python",
+    tag: "img4",
     price: 4000,
-    inCart: 0
+    inCart: 0,
+    idName: "Python_Course",
   },
   {
-    name: 'C#',
-    tag: 'img5',
+    id: 5,
+    name: "C#",
+    tag: "img5",
     price: 2000,
-    inCart: 0
+    inCart: 0,
+    idName: "C_Sharp_Course",
   },
   {
-    name: 'Bootstrap',
-    tag: 'img6',
+    id: 6,
+    name: "Bootstrap",
+    tag: "img6",
     price: 700,
-    inCart: 0
+    inCart: 0,
+    idName: "Bootstrap_Course",
   },
   {
-    name: 'React.JS',
-    tag: 'img7',
-    price:4999,
-    inCart: 0
+    id: 7,
+    name: "React.JS",
+    tag: "img7",
+    price: 4999,
+    inCart: 0,
+    idName: "React_Course",
   },
   {
-    name: 'Angular',
-    tag: 'img8',
-    price:3999,
-    inCart: 0
-  }
-]
+    id: 8,
+    name: "Angular",
+    tag: "img8",
+    price: 3999,
+    inCart: 0,
+    idName: "Angular_Course",
+  },
+];
 
 
 /**

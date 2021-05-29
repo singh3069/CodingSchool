@@ -17,7 +17,6 @@ function removeItemFromCartHandler(event) {
 
 function displayItemsInCartLayout() {
   let cartItems = getitemsFromLocalStorage().itemsArray
-  console.log(cartItems)
   let productContainer = document.querySelector('.products')
   const cartCost = getitemsFromLocalStorage().totalCost
 
@@ -27,32 +26,32 @@ function displayItemsInCartLayout() {
       productContainer.innerHTML += `
           <div class="product">
           <p class="cancelbutton" data-id=${item.name
-            .split(' ')
-            .join('')} onClick="removeItemFromCartHandler(event)">+</P>
+            .split(" ")
+            .join("")} onClick="removeItemFromCartHandler(event)">+</P>
           <img class="cartImg" src="./Images/${item.tag}.jpeg">
           <h3>${item.name}</h3>
           </div>
-          <div class="price">$${item.price}.00</div>
+          <div class="price">₹ ${item.price}.00</div>
           <div class="quantity">
           
           <span>${item.inCart}</span>
           
           </div>
           <div class="total">
-              $${item.inCart * item.price}.00
+          ₹&nbsp;${item.inCart * item.price}.00
           </div>
-          `
+          `;
     })
 
     if (cartCost == 0) {
       productContainer.innerHTML = `<p>Nothing Purchased </p>`
     } else {
       productContainer.innerHTML += `
-          <div class="basketTotalContainer">
-              <h4 class="basketTotalTitle">
-                  Basket Total &nbsp; $${cartCost}.00
+          <div class="cartTotalContainer">
+              <h4 class="cartTotalTitle">
+                  <strong>Cart Total</strong> &nbsp; ₹ ${cartCost}.00
               </h4>
-              <button class= "payment_button" onclick="checkOut()">Check Out</button>
+              <button class= "Checkout_button" onclick="checkOut()">Check Out</button>
           </div>
       `;
     }
@@ -70,7 +69,7 @@ function checkOut() {
   document.querySelector(".paymentDiv").style.visibility = "visible";
   let CheckOutPayment = document.querySelector(".CheckOutPayment");
   CheckOutPayment.innerHTML = `
-    Total &nbsp; $${cartCost}.00
+    Total &nbsp; ₹ ${cartCost}.00
     `;
 }
 
@@ -91,84 +90,20 @@ function addingEverythingToCoursesPurchased() {
   showCartItemsCount();
   displayItemsInCartLayout();
   alert('After the Payment submission Purchased Course will be  added to Courses Purchased section in Myprofile');
-  let courseContainer = document.getElementById("courseContainer");
-
+  // let courseContainer = document.getElementById("courseContainer");
   const productsInCart = localStorage.getItem("productsInCart");
-
   localStorage.setItem("purchasedCourse", productsInCart);
-
   window.localStorage.removeItem("productsInCart");
-
-  // if(window.location = "mycourses.html"){
-  //   coursesPurchased();
-  // }
 }
 
 
 
 
-// function coursesPurchased(){
-//   let courseContainer = document.getElementById("courseContainer");
-  
-//   const productsInCart = localStorage.getItem("productsInCart");
-  
-//   localStorage.setItem("purchasedCourse", productsInCart);
-  
-//   window.localStorage.removeItem("productsInCart");
-
-
-//   const itemPurchasedObj = JSON.parse(localStorage.getItem("purchasedCourse")) || {} ;
-//   const purchasedObjValues = Object.values(itemPurchasedObj);
-//   // const purchasedObjKey = Object.keys(itemPurchasedObj);
-
-
-//   // console.log(itemPurchasedObj);
-//   // console.log(purchasedObjValues);
-//   // console.log(purchasedObjKey);
-
-//   if (purchasedObjValues && courseContainer) {
-//     courseContainer.innerHTML = ''
-//     purchasedObjValues.map((item) => {
-//       courseContainer.innerHTML += `
-//           <div class="coursePurchased">
-//           <h1 class="purchsedCourseName">${item.name}</h1>
-//           <img class="purchasedCourseImg" src="./Images/${item.tag}.jpeg">
-//           </div>
-//           `;
-//       // console.log(item.name);
-//     });
-//   }
-//   // console.log(purchasedObjValues);
-  
-// }
 
 
 
 
 
-// function coursesPurchased() {
-//   let courseContainer = document.getElementById("courseContainer");
-//   const productsInCart = localStorage.getItem("productsInCart");
-//   localStorage.setItem("purchasedCourse", productsInCart);
-//   const itemPurchased = localStorage.getItem("purchasedCourse");
-//   const purchasedCourseObj = JSON.parse(itemPurchased) || {};
-//   const purcahsedCourseNameImage = Object.values(purchasedCourseObj);
-//   window.localStorage.removeItem("productsInCart");
 
-//   console.log(purcahsedCourseNameImage);
-
-//   if (purcahsedCourseNameImage && courseContainer) {
-//     courseContainer.innerHTML = "";
-//     purcahsedCourseNameImage.map((el) => {
-//       return (courseContainer.innerHTML += `
-//           <div class="coursePurchased">
-//           <h1 class="purchsedCourseName">${el.name}</h1>
-//           <img class="purchasedCourseImg" src="./Images/${el.tag}.jpeg">
-//           </div>
-//           `);
-//       // console.log(el.name);
-//     });
-//   }
-// }
 
 
