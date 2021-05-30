@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
 
 * {
   margin: 0;
@@ -6,25 +7,31 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  /* background-color: #56859e; */
+  /* display: block; */
 }
-/* ------------------------nava bar css start------------------------- */
+
 .navbar {
   width: 100%;
   display: flex;
-  background-color: #2f3e46;
-  height: 60px;
+  background-color: #264653;
+  height: 80px;
   gap: 5px;
-  justify-content: center;
-  font-size: small;
-  /* position: fixed; */
+  justify-content: space-around;
+  font-size: 20px;
+  position: fixed;
   z-index: 2;
-  box-shadow: 0px 0px 20px 10px #2f3e46;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px #000;
+  border-bottom: 3px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .fst_navDiv {
-  width: 20%;
+  width: 27%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,14 +46,15 @@ body {
 
 .fst_navDiv span {
   font-size: 14px;
-  color: rgb(146, 146, 146);
+  color: whitesmoke;
 }
 
 .Snd_navDiv {
   display: flex;
   width: 80%;
-  justify-content: flex-start;
   align-items: center;
+  padding-right: 21px;
+  position: relative;
 }
 
 .Snd_navDiv ul li {
@@ -54,21 +62,33 @@ body {
   display: inline;
 }
 
+.logout_li {
+  position: absolute;
+  right: 58px;
+}
+
+.secdiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 .a_tag_elm {
   padding: 10px;
-  color: bisque;
+  color: white;
   text-decoration: none;
 }
 
 .a_tag_elm:hover {
   box-sizing: border-box;
   border-radius: 10px;
-  background-color: rgb(13, 16, 66);
+  background-color: #0e3347;
   cursor: pointer;
 }
 
+
+
 .cart{
-  /* background-color: crimson; */
   width: 100px;
   font-size: 15px;
   display: flex;
@@ -94,42 +114,67 @@ body {
 
 .cart h2{
   margin: 0 5px;
-/* margin-right: 5px; */
-}
+} 
 
 
-/* ------------------------nava bar css end------------------------- */
 
 
 .container{
-    background: chocolate;
-    margin-top: 2px;
+    /* background: chocolate; */
     width: 100%;
-    height: 91.8vh;
+    height: 88vh;
     display: flex;
     gap: 15px;
+    overflow-y: scroll;
+    /* z-index: 0; */
+    margin: 0px;
+    position: absolute;
+    top: 85px;
 }
 
 /* -----------styling of left side div (visitinglinks) and its content start----------------------------- */
 .visitinglinks{    
     width: 26%;
     height: 100%;
-    background: aquamarine;
+    /* background: aquamarine; */
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
+    border-right: 10px solid black;
+    border-radius: 2px;
 }
 
 
-.visitinglinks ol {
+
+
+.htmlQus{
+    /* background: red; */
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.questions ol {
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* background: azure; */
     
+}
+
+
+.cssQus{
+  /* background: orange; */
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 
@@ -149,15 +194,15 @@ body {
 .mainContent{
     width: 76%;
     height: 100%;
-    background: blanchedalmond;
+    /* background: blanchedalmond; */
     overflow-y: hidden;
     overflow-x: visible;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     align-content: center;
     gap: 40px;
+    overflow-y: scroll;
 }
 
 .mainContent h1 {
@@ -166,8 +211,8 @@ body {
 }
 
 .mainContent:hover{
-    overflow-y: scroll;
-    overflow-x: visible;
+    /* overflow-y: scroll; */
+    /* overflow-x: visible; */
 }
 
 /* -----------styling of right side div (maincontent) and its content end----------------------------- */
@@ -175,26 +220,28 @@ body {
 
 /* ----------------scroll bar styling -------------------- */
 /* width */
-::-webkit-scrollbar {
+.mainContent::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+.mainContent::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+.mainContent::-webkit-scrollbar-thumb {
   background: #2f3e46; 
   border-radius: 10px;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+.mainContent::-webkit-scrollbar-thumb:hover {
   background: #2f3e46; 
 }
+
+/* whitespace */
 
 
 /* ----------------scroll bar styling end-------------------- */

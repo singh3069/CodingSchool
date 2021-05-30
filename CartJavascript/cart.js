@@ -1,27 +1,26 @@
-
 function removeItemFromCartHandler(event) {
   // console.log(event)
-  const productID = event.target.dataset.id
+  const productID = event.target.dataset.id;
   const oldData = Object.values(
-    JSON.parse(localStorage.getItem('productsInCart'))
-  )
+    JSON.parse(localStorage.getItem("productsInCart"))
+  );
   const newData = oldData.filter(
-    (i) => i.name.split(' ').join('') !== productID
-  )
-  const Obj = {}
-  const newObj = newData.map((i) => (Obj[i.tag] = i))
-  setItemsInLocalStorage(Obj)
-  displayItemsInCartLayout()
-  showCartItemsCount()
+    (i) => i.name.split(" ").join("") !== productID
+  );
+  const Obj = {};
+  const newObj = newData.map((i) => (Obj[i.tag] = i));
+  setItemsInLocalStorage(Obj);
+  displayItemsInCartLayout();
+  showCartItemsCount();
 }
 
 function displayItemsInCartLayout() {
-  let cartItems = getitemsFromLocalStorage().itemsArray
-  let productContainer = document.querySelector('.products')
-  const cartCost = getitemsFromLocalStorage().totalCost
+  let cartItems = getitemsFromLocalStorage().itemsArray;
+  let productContainer = document.querySelector(".products");
+  const cartCost = getitemsFromLocalStorage().totalCost;
 
   if (cartItems && productContainer) {
-    productContainer.innerHTML = ''
+    productContainer.innerHTML = "";
     cartItems.map((item) => {
       productContainer.innerHTML += `
           <div class="product">
@@ -41,10 +40,10 @@ function displayItemsInCartLayout() {
           ₹&nbsp;${item.inCart * item.price}.00
           </div>
           `;
-    })
+    });
 
     if (cartCost == 0) {
-      productContainer.innerHTML = `<p>Nothing Purchased </p>`
+      productContainer.innerHTML = `<p>Nothing Purchased </p>`;
     } else {
       productContainer.innerHTML += `
           <div class="cartTotalContainer">
@@ -57,15 +56,13 @@ function displayItemsInCartLayout() {
     }
   }
 }
-displayItemsInCartLayout()
-
+displayItemsInCartLayout();
 
 const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
 
-
 // this function is applied when a onclick is added to checkout button and a check out from is made in  cart page
 function checkOut() {
-  const  cartCost = getitemsFromLocalStorage().totalCost
+  const cartCost = getitemsFromLocalStorage().totalCost;
   document.querySelector(".paymentDiv").style.visibility = "visible";
   let CheckOutPayment = document.querySelector(".CheckOutPayment");
   CheckOutPayment.innerHTML = `
@@ -73,37 +70,27 @@ function checkOut() {
     `;
 }
 
-
-
-
-
-
 function cancelPayment() {
   document.querySelector(".paymentDiv").style.visibility = "hidden";
 }
 
-if (cancelPaymentButton)cancelPaymentButton.addEventListener("click", cancelPayment);
+if (cancelPaymentButton)
+  cancelPaymentButton.addEventListener("click", cancelPayment);
 
 
 
 function addingEverythingToCoursesPurchased() {
   showCartItemsCount();
   displayItemsInCartLayout();
-  alert('After the Payment submission Purchased Course will be  added to Courses Purchased section in Myprofile');
-  // let courseContainer = document.getElementById("courseContainer");
-  const productsInCart = localStorage.getItem("productsInCart");
-  localStorage.setItem("purchasedCourse", productsInCart);
+  alert(
+    `                PAYMENT SUCCESSFULLY DONE ! 
+    Purchased Courses Are Now Available In MyProfile 
+    `
+  );
+
+  const productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
+  const purchasedCourse = JSON.parse(localStorage.getItem("purchasedCourse"))|| {}
+  localStorage.setItem("purchasedCourse", JSON.stringify({...productsInCart , ...purchasedCourse}));
+  console.log("asdga" ,{ ...productsInCart, ...purchasedCourse } );
   window.localStorage.removeItem("productsInCart");
 }
-
-
-
-
-
-
-
-
-
-
-
-

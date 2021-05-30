@@ -95,6 +95,7 @@ function setItemsInLocalStorage(obj) {
   localStorage.setItem('productsInCart', JSON.stringify(obj))
 }
 
+
 /**
  * Add product in localstorage
  * @param {Object} product Object product

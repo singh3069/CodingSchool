@@ -834,7 +834,7 @@ form > input {
   top: 13%;
   left: 28.4%;
   position: fixed;
-  height: 555px;
+  height: 645px;
   width: 660px;
   border: 2px solid black;
   flex-direction: column;
@@ -903,6 +903,15 @@ form > input {
 .cancelPaymentButton:hover {
   background-color: #ff0000;
   /* border: 2px solid black; */
+}
+
+.paymentFooter{
+      box-sizing: border-box;
+    border: 2px solid black;
+    height: 60px;
+    margin-bottom: -10px;
+    padding-left: 22px;
+    margin-left: -1px;
 }
 
 .paymentFooter p {

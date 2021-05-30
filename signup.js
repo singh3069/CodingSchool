@@ -34,9 +34,6 @@ for (let i = 0; i < inputBox.length; i++) {
   });
 }
 
-
-
-
 /**
  * displaying form on click.
  */
