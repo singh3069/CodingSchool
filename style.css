@@ -860,7 +860,6 @@ form > input {
 }
 
 .paymentDivForm {
-  /* background: red; */
   gap: 14px;
   display: flex;
   height: 480px;
@@ -893,17 +892,14 @@ form > input {
   width: 43%;
   height: 38px;
   text-decoration: none;
-  /* border: 1px solid black; */
 }
 
 .confirmPaymentButton:hover {
   background-color: #00b200;
-  /* border: 2px solid black; */
 }
 
 .cancelPaymentButton:hover {
   background-color: #ff0000;
-  /* border: 2px solid black; */
 }
 
 .paymentFooter{
@@ -927,7 +923,6 @@ form > input {
 #courseContainer {
   width: 100%;
   height: auto;
-  /* background-color: coral; */
   position: absolute;
   top: 80px;
   display: flex;
