@@ -8,8 +8,6 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  /* background-color: #56859e; */
-  /* display: block; */
 }
 
 .navbar {
@@ -120,13 +118,11 @@ body {
 
 
 .container{
-    /* background: chocolate; */
     width: 100%;
     height: 88vh;
     display: flex;
     gap: 15px;
     overflow-y: scroll;
-    /* z-index: 0; */
     margin: 0px;
     position: absolute;
     top: 85px;
@@ -136,20 +132,20 @@ body {
 .visitinglinks{    
     width: 26%;
     height: 100%;
-    /* background: aquamarine; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    border-right: 10px solid black;
-    border-radius: 2px;
+    border-right: 10px solid #0e3347;
+    border-radius: 10px;
+    color: #264653;
+
 }
 
 
 
 
 .htmlQus{
-    /* background: red; */
     width: 70%;
     height: 40%;
     display: flex;
@@ -168,7 +164,6 @@ body {
 
 
 .cssQus{
-  /* background: orange; */
     width: 70%;
     height: 40%;
     display: flex;
@@ -178,9 +173,6 @@ body {
 }
 
 
-.visitinglinks ol li {
-    /* margin-bottom: 10px; */
-}
 
 /* -----------styling of left side div (visitinglinks) and its content end----------------------------- */
 
@@ -194,7 +186,6 @@ body {
 .mainContent{
     width: 76%;
     height: 100%;
-    /* background: blanchedalmond; */
     overflow-y: hidden;
     overflow-x: visible;
     display: flex;
@@ -208,11 +199,7 @@ body {
 .mainContent h1 {
     margin: 0px auto;
     text-decoration: underline;
-}
-
-.mainContent:hover{
-    /* overflow-y: scroll; */
-    /* overflow-x: visible; */
+    color: #264653;
 }
 
 /* -----------styling of right side div (maincontent) and its content end----------------------------- */

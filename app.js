@@ -10,6 +10,15 @@ function showFeedbackForm () {
 if(feedBackDiv)feedBackDiv.addEventListener('click', showFeedbackForm);
 
 
+
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
 let feedbackForm = document.querySelector("#feedbackForm");
 const closeFeedbackFormBttn = document.getElementById("closeFeedbackForm");
 /**
@@ -19,6 +28,11 @@ function hideFeedbackForm() {
   feedbackForm.style.visibility = "hidden";
 }
 if(closeFeedbackFormBttn)closeFeedbackFormBttn.addEventListener("click", hideFeedbackForm);
+
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 
 const manageYourAccountDIv = document.querySelector(".manageYourAccountDIv");
@@ -34,11 +48,18 @@ function showupdateForm () {
 if(manageYourAccountDIv)manageYourAccountDIv.addEventListener('click', showupdateForm);
 
 
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
+
+
+const closeUpdateDivBttn = document.getElementById("closeUpdateDivBttn");
 /** 
 * hidding update your profile from
 */
-
-const closeUpdateDivBttn = document.getElementById("closeUpdateDivBttn");
 
 function hideUpdateForm(){
     updateDiv.style.visibility = "hidden";
@@ -46,17 +67,27 @@ function hideUpdateForm(){
 if(closeUpdateDivBttn)closeUpdateDivBttn.addEventListener("click", hideUpdateForm);
 
 
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
+
 const loginDiv = document.getElementById("loginBox");
 const login = document.getElementById("Login");
-//  login box js......................
+/**
+ * to show login form on click
+ */
 function showLoginDiv() {
-    // alert ("hello")
     signUpDiv.style.visibility = "hidden";
     loginDiv.style.visibility = "visible";
 }
 if(login) login.addEventListener("click", showLoginDiv);
 
 
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
 
 const closeLoginDiv = document.getElementById("closelogindiv");
 /**
@@ -72,9 +103,15 @@ if(closeLoginDiv)closeLoginDiv.addEventListener('click' , hideLoginDiv);
 
 
 
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
+
 const SwitchtoSignUp = document.getElementById("SwitchtoSignUp");
 /**
- * switching between login form to signup from
+ * switching from login to signup 
  */
 function switchToSignUpFrom(){
     signUpDiv.style.visibility = "visible";
@@ -84,11 +121,17 @@ function switchToSignUpFrom(){
 
 if(SwitchtoSignUp)SwitchtoSignUp.addEventListener("click", switchToSignUpFrom);
 
-// --------------------------------------------------------------------
+
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
 
 const switchToLogin = document.getElementById("switchToLogin");
 /**
- * Switch  form to signup to login 
+ * Switching  form to signup to login 
  */
 
 function switchLoginFrom(){
@@ -100,10 +143,16 @@ if(switchToLogin)switchToLogin.addEventListener("click", switchLoginFrom);
 
 
 
+
+
+// -------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------
+
+
 const updateFormbutton = document.getElementById("updateFormbutton");
 
 /**
- * cheching confirm password and password in update form 
+ * cheching confirm password and password in update my profile form 
  */
 
 function updatefrom(event) {

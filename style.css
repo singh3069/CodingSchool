@@ -138,7 +138,7 @@ body {
   position: absolute;
   z-index: 1;
   bottom: 30%;
-  left: 1%;
+  left: 30%;
   text-align: center;
   color: #fff;
   height: 50px;
@@ -499,6 +499,7 @@ form > input {
 .courseHeading {
   text-align: center;
   text-decoration: underline;
+  font-size: 50px;
 }
 
 .courseName {

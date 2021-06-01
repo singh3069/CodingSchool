@@ -1,5 +1,8 @@
+
+/**
+ * removes the courses added to cart from cart.
+ */
 function removeItemFromCartHandler(event) {
-  // console.log(event)
   const productID = event.target.dataset.id;
   const oldData = Object.values(
     JSON.parse(localStorage.getItem("productsInCart"))
@@ -14,6 +17,13 @@ function removeItemFromCartHandler(event) {
   showCartItemsCount();
 }
 
+// --------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
+
+
+/**
+ * Show the Courses in UI in the cart page when thye are added to cart.
+ */
 function displayItemsInCartLayout() {
   let cartItems = getitemsFromLocalStorage().itemsArray;
   let productContainer = document.querySelector(".products");
@@ -58,9 +68,14 @@ function displayItemsInCartLayout() {
 }
 displayItemsInCartLayout();
 
-const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
 
-// this function is applied when a onclick is added to checkout button and a check out from is made in  cart page
+// ---------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+
+
+/**
+ * Show the payemnt div 
+ */
 function checkOut() {
   const cartCost = getitemsFromLocalStorage().totalCost;
   document.querySelector(".paymentDiv").style.visibility = "visible";
@@ -70,6 +85,16 @@ function checkOut() {
     `;
 }
 
+
+
+// ---------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+
+const cancelPaymentButton = document.querySelector(".cancelPaymentButton");
+
+/**
+ * Cancel the Payment
+ */
 function cancelPayment() {
   document.querySelector(".paymentDiv").style.visibility = "hidden";
 }
@@ -79,6 +104,12 @@ if (cancelPaymentButton)
 
 
 
+
+// ---------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------
+/**
+ * Confirms payment and purchased courses are added to myprofile in purchased courses section
+ */
 function addingEverythingToCoursesPurchased() {
   showCartItemsCount();
   displayItemsInCartLayout();

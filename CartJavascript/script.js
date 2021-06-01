@@ -75,7 +75,7 @@ const getitemsFromLocalStorage = () => {
   const itemsArray = Object.values(rawObject)
   const totalCost = itemsArray.reduce((acc, item) => acc + item.price, 0)
   const totalItems = itemsArray.length
-  // console.log(itemsArray);
+
 
   return {
     rawObject,
@@ -119,7 +119,6 @@ function addProductInCart(product) {
     }
   }
 
-  // localStorage.setItem('productsInCart', JSON.stringify(cartItems))
   setItemsInLocalStorage(cartItems)
 }
 

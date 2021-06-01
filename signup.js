@@ -1,4 +1,3 @@
-// const loginErrorMsg = document.getElementById("login-error-msg");
 let username = document.getElementById("name");
 let course = document.getElementById("course");
 let email = document.getElementById("email");
@@ -22,6 +21,10 @@ for (let i = 0; i < inputFields.length; i++) {
   });
 }
 
+
+// -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------
+
 /**
  * adding keydown function to buttons.
  */
@@ -34,15 +37,24 @@ for (let i = 0; i < inputBox.length; i++) {
   });
 }
 
+
+// -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------
+
+
 /**
  * displaying form on click.
  */
 function displayForm() {
-  // let signUpFrom = document.getElementById('signUpForm')
   signUpDiv.style.visibility = "visible";
   loginDiv.style.visibility = "hidden";
 }
 formDisplay.addEventListener("click", displayForm);
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------
 
 /**
  * form validation function
@@ -97,12 +109,18 @@ function signSubmit(event) {
 
 button.addEventListener("click", signSubmit);
 
+
+// -------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------
+
+
 /**
  * Hide the sign form on click.
  */
 function hideForm() {
   signUpDiv.style.visibility = "hidden";
 }
+
 closeForm.addEventListener("click", hideForm);
 
-// ======================================
+
