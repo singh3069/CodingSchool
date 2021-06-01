@@ -31,7 +31,7 @@ coursesPurchased();
  * Show the Preferred courses details after courses are purchased and add to my profile
  */
 function switchToPreferedCourse(event) {
-  console.log(event.target.id);
+  // console.log(event.target.id);
   if (event.target.id === "Html_CSS_Course") {
     window.location = "./courses/htmlandcss.html";
   }

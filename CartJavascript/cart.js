@@ -122,6 +122,5 @@ function addingEverythingToCoursesPurchased() {
   const productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
   const purchasedCourse = JSON.parse(localStorage.getItem("purchasedCourse"))|| {}
   localStorage.setItem("purchasedCourse", JSON.stringify({...productsInCart , ...purchasedCourse}));
-  console.log("asdga" ,{ ...productsInCart, ...purchasedCourse } );
   window.localStorage.removeItem("productsInCart");
 }
