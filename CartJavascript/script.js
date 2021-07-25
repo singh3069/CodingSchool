@@ -76,7 +76,7 @@ const getitemsFromLocalStorage = () => {
   const totalCost = itemsArray.reduce((acc, item) => acc + item.price, 0)
   const totalItems = itemsArray.length
 
-
+  console.log(rawObject)
   return {
     rawObject,
     tagsArray,

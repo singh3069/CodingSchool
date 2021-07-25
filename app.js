@@ -85,6 +85,26 @@ function showLoginDiv() {
 if(login) login.addEventListener("click", showLoginDiv);
 
 
+// ------------------------------------------------
+
+const loginButton = document.getElementById("login-form-submit");
+
+const loginForm = document.getElementById("login_form");
+
+loginButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const username = loginForm.username.value;
+  const password = loginForm.password.value;
+
+  if (username === "Saurabh" && password === "test@gmail.com") {
+    alert("You have successfully logged in.");
+    window.location.replace("home.html");
+  } else {
+    alert("wrong id password");
+  }
+});
+
+
 
 // -------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------
